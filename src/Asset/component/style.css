@@ -1,0 +1,59 @@
+.navbar {
+    background-color: #C93D8D ;
+    padding: 60px;
+}
+.navbar a {
+    color: white;
+}
+
+.logo {
+    font-weight:600;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    color: #1F0443;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login {
+    background-color: #1F0443;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login :hover {
+    background-color: white;
+}
+
+/*css Header */
+
+.Header {
+    padding: 200px 60px;
+    background-image:url("../img/Background-Header.png");
+    background-size: cover;
+    height: 978px;
+    color: rgb(255, 255, 255);
+}
+.Component1 {
+    width: 650px;
+}
+
+.Component1 h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.Component1 p {
+    margin-top: 20px;
+    opacity: 50%;
+    font-size: 40px;
+}
+
+.btn {
+    background-color: #1F0443;
+}
+
