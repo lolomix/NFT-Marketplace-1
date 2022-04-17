@@ -5,14 +5,14 @@ import "./style.css"
 function Navbar () {
         return (
             <div>
-                <nav class="navbar d-flex">
-                     <a class="logo"><span>NFT</span>  Collection</a>     
-                     <div class="d-flex justify-content-end">
-                      <a class=" nav-item nav-link">Home</a>
-                      <a class=" nav-item nav-link" > Explore</a>
-                      <a class=" nav-item nav-link" > Stats</a>
-                      <a class=" nav-item nav-link" > Help</a>
-                      <a class=" nav-item nav-link login">Login</a>
+                <nav class="navbar fixed-top">
+                     <a class="logo" href="#"><span>NFT</span>  Collection</a>     
+                     <div class="d-flex justify-content-end nav">
+                      <a class=" nav-item nav-link" href="#" >Home</a>
+                      <a class=" nav-item nav-link" href="#" >Explore</a>
+                      <a class=" nav-item nav-link" href="#" >Stats</a>
+                      <a class=" nav-item nav-link" href="#"  >Help</a>
+                      <a class=" btn-solid-login" href="#" >Login</a>
                      </div>
                 </nav>
             </div>
