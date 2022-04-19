@@ -1,19 +1,37 @@
 nav {
-    background-color: #C93D8D;
-    padding: 60px;
+    padding: 50px;
 }
 .navbar a {
     color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 8px;
+}
+
+.navbar-nav {
+    padding: 20px;
 }
 
 .navbar a:hover {
-    color: #1F0443;
+    color: #C93D8D;
     font-weight: bold;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+span {
+    color: #C93D8D;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn-solid-login {
     border-radius: 10px;
-    padding: 10px;
     width: 80px;
     text-align: center;
     background-color: #1F0443;
@@ -25,44 +43,42 @@ nav {
     background-color: #f3eaff;
 }
 
-span {
-    color: #1F0443;
-    font-weight: 800;
-    font-family: 'Poppins', sans-serif;
-}
 
 /*css Header */
 
-.Header {
-    padding: 200px 60px;
+Header {
     background-image:url("../img/Background-Header.png");
     background-size: cover;
     height: 978px;
     color: rgb(255, 255, 255);
 }
-.Component1 {
-    width: 650px;
+
+.Header {
+    padding-top: 90px;
 }
 
-.Component1 h1 {
-    font-size: 80px;
-    font-weight: 600;
+.title {
+    padding-top: 200px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.Component1 p {
-    margin-top: 20px;
+.title h1 {
+    font-size: 48px;
+    font-weight: 400px;
+}
+
+.title p {
+    font-size: 20px;
     opacity: 50%;
-    font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .btn-solid-lg {
     color:  white;
-    padding: 15px;
-    font-size: 20px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 15px;
-    background-color: #1F0443;
+    border-radius: 10px;
+    background-color: #C93D8D;
 }
 
 .btn-solid-lg:hover {
@@ -72,8 +88,14 @@ span {
     
 }
 
-/* */
+/*image Header*/
 
-body {
-    height: 4000px;
+.img-1 {
+    margin-top: 500px;
+    width: 217px;
+    height: 249px;
+}
+
+img {
+    padding: 100px;
 }

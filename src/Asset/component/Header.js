@@ -1,28 +1,30 @@
+import React from "react"
 import "./style.css"
 
-function Header () {
+class Header extends React.Component () {
+   render () {
     return (
-     
-      <body>
-           <div>
-            
-            <header class="Header">
-                <div class="Component1">
-                <h1>Create and Sell Your Digital Masterpiece</h1>
-                <p>The Biggest marketplace that sells digital asset from crypto</p>
-                <a class="btn-solid-lg" href="#">Explore</a>
-                </div>
-            </header>
-            
+        <div>
+            <header>
+             <div class="container Header">
+             <div class="row  ">
+                  <div class="title col-lg-4">
+                   <h1>Create and Sell Your Digital Masterpiece</h1>
+                   <p class="">The Biggest marketplace that sells digital asset from crypto</p>
+                   <a class="btn-solid-lg" href="#">Explore</a>
+                  </div>
 
-            <section>
-                <div class="content2"></div>
-            </section>
-        </div>
-      </body>
-        
-            
-    )
+                  <div class="img col-lg">
+                      <img src=""></img>
+                      <p>Artist Name</p>
+                      <p>Description</p>
+                  </div>
+              </div>
+             </div>
+          </header>
+        </div>     
+  )
+   }
 }
 
 export default Header
