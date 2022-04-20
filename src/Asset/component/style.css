@@ -1,5 +1,5 @@
 nav {
-    padding: 50px;
+    padding: 100px;
 }
 .navbar a {
     color: rgb(255, 255, 255);
@@ -58,7 +58,8 @@ Header {
 }
 
 .title {
-    padding-top: 200px;
+    padding-top: 180px;
+    margin-right: 100px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -89,13 +90,44 @@ Header {
 }
 
 /*image Header*/
-
-.img-1 {
-    margin-top: 500px;
-    width: 217px;
-    height: 249px;
+.img_1 {
+    text-align: center;
+    padding-top: 250px;
 }
 
-img {
+.img_1 img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.img_2 {
+    text-align: center;
     padding: 100px;
+}
+
+.img_2 img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.img_3 {
+    padding-top: 250px;
+    text-align: center;
+}
+
+.img_3 img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.image p {
+    margin-top: 10px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.Description {
+    opacity: 50%;
 }
