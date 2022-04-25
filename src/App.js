@@ -1,10 +1,15 @@
-import Home from './Asset/component/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './Asset/component/Navbar';
+import LandingPage from './Asset/pages/LandingPages';
+import Footer from './Asset/component/Footer'
+
 
 function App() {
   return (
     <div>
-      <Home/>
+        <Navbar/>
+        <LandingPage/>
+        <Footer/>
     </div>
   );
 }

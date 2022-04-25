@@ -1,4 +1,5 @@
 import React from "react"
+import { Logo } from "./Logo";
 import "./style.css"
 
 
@@ -6,7 +7,7 @@ function Navbar () {
         return (
             <div>
                 <nav class="navbar navbar-expand-sm fixed-top container">
-                     <h3 class="navbar-brand logo" href="#"><span>NFT</span>  Collection</h3>
+                     <Logo/>
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                     </button>  
