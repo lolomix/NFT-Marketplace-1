@@ -13,8 +13,7 @@ export default function Footer (){
                         <div class="col">
 
                             <ul>
-                            <Logo/>
-                            <p></p>
+                            <a><Logo/></a>
                             </ul>
 
                             <ul>
@@ -37,7 +36,7 @@ export default function Footer (){
                             </ul>
 
                             <ul>
-                                <li class="title-footer">Statst</li>
+                                <li class="title-footer">Company</li>
                                 <li>About Us</li>
                                 <li>Help</li>
                                 <li>Terms of Services</li>

@@ -3,13 +3,17 @@ import './pages.css'
 import img_1 from "../img/Philip.jpg"
 import img_2 from "../img/Vadim.jpg"
 import img_3 from "../img/Nicola.jpg"
+import Footer from "../component/Footer"
+import Navbar from "../component/Navbar"
 
 
 function Header () {
     return (
         <div>
+            <Navbar/>
+            <div class="LandingPage">
             <header>
-             <div class="Header container">
+             <div class="Header container col">
              <div class="row  ">
                   <div class="title col-lg-4">
                    <h1>Create and Sell Your Digital Masterpiece</h1>
@@ -35,14 +39,39 @@ function Header () {
                       <p class="Description">Arts & Culture</p>
                   </div> 
               </div>
-
              </div>
           </header>
 
-          <div class="content2">
-              <p></p>
+          <div class="content2 text-light">
+              <div class="container d-flex justify-content-center">
+                  <div class="">
+                        <ul>
+                            <li class="total">51+</li>
+                            <li class="title-total">Artwork</li>
+                        </ul>
+
+                        <ul>
+                            <li class="total">51+</li>
+                            <li class="title-total">Artwork</li>
+                        </ul>
+
+                        <ul>
+                            <li class="total">51+</li>
+                            <li class="title-total">Artwork</li>
+                        </ul>
+                  </div>
+              </div>
           </div>
-         </div>     
+
+          <div class="content3">
+            <div class="container">
+                    <h2>Category</h2>
+                    
+            </div>
+          </div>
+         </div> 
+         <Footer/>    
+        </div>
         )
    }
 

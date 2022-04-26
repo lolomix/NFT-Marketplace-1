@@ -1,15 +1,25 @@
+.LandingPage {
+    background-image:url("../img/Background-Header.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+h1 {
+    display: block;
+}
 
 /*css Header */
 
-Header {
-    background-image:url("../img/Background-Header.png");
-    background-size: cover;
-    height: 800px;
-    color: rgb(255, 255, 255);
-}
-
 .Header {
     padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .title {
@@ -38,8 +48,8 @@ Header {
 }
 
 .btn-solid-lg:hover {
-    color:#1F0443;
-    font-weight: 600;
+    color:#C93D8D;
+    font-weight: bold;
     background-color: #f3eaff;
     
 }
@@ -92,9 +102,60 @@ Header {
     opacity: 50%;
 }
 
-/* Header 2 */
+/* header2*/
 
+
+/* header2 END*/
+
+/* Content 2*/
 .content2 {
-    background-color: #1F0443;
-    height: 200px;
+    text-align: center ;
 }
+.content2 ul {
+    list-style: none;
+    float: left;
+}
+
+.total {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.title-total {
+    opacity: 50%;
+}
+
+/* Content 2 End*/
+
+/* Content 3*/
+
+.content3 ul {
+    list-style: none;
+    float: left;
+}
+
+
+/* Content 3 End*/
+
+
+/*Login*/ 
+
+.Login {
+    background-color: #1F0443;
+    height: auto;
+}
+
+.card {
+    background-color: #C93D8D;
+    border-radius: 80px;
+}
+
+.Login img {
+    width: 100%;
+}
+
+.form-login {
+    padding-top: 100px;
+}
+
+/*Login end*/ 

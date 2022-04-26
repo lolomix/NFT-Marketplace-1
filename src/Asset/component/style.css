@@ -34,7 +34,7 @@ span {
     border-radius: 10px;
     width: 80px;
     text-align: center;
-    background-color: #1F0443;
+    background-color: #C93D8D;
     text-decoration: none;
     font-family: 'Poppins', sans-serif; 
 }
@@ -45,14 +45,12 @@ span {
 
 /* Footer */
 
-footer .container {
-    position: relative;
-}
-
 footer {
     color: white;
-    height: 300px;
+    height: auto;
+    width: 100%;
     background-color: #1F0443;
+    bottom: 0px;
 }
 
 .title-footer {

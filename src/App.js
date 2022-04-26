@@ -1,16 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Asset/component/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './Asset/pages/LandingPages';
-import Footer from './Asset/component/Footer'
+import { Login } from './Asset/pages/Login';
+import { Register } from './Asset/pages/Register';
 
 
 function App() {
   return (
-    <div>
-        <Navbar/>
-        <LandingPage/>
-        <Footer/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage/>}>
+          <Route path="Login" element={<Login/>}/>
+          <Route path="Register" element={<Register/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -17,7 +17,7 @@ function Navbar () {
                       <a class=" nav-item nav-link" href="#" >Explore</a>
                       <a class=" nav-item nav-link" href="#" >Stats</a>
                       <a class=" nav-item nav-link" href="#" >Help</a>
-                      <a class=" btn-solid-login" href="#" >Login</a>
+                      <a class=" btn-solid-login">Login</a>
                       </div>
                      </div>
                 </nav>
