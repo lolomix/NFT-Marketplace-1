@@ -1,8 +1,8 @@
 .LandingPage {
     background-image:url("../img/Background-Header.png");
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: 1500px;
+    width: auto;
     color: rgb(255, 255, 255);
     display: block;
 }
@@ -68,7 +68,7 @@ h1 {
 
 .img_2 {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .img_2 img {
@@ -104,6 +104,12 @@ h1 {
 
 /* header2*/
 
+.header2 img {
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
 
 /* header2 END*/
 
@@ -128,10 +134,20 @@ h1 {
 /* Content 2 End*/
 
 /* Content 3*/
+.Category {
+    padding-top: 50px;
+}
 
-.content3 ul {
+.Category ul {
     list-style: none;
     float: left;
+}
+
+.Category li {
+    background-color: #1F0443;
+    width: 390px;
+    height: 250px;
+    text-align: center;
 }
 
 
@@ -146,16 +162,49 @@ h1 {
 }
 
 .card {
-    background-color: #C93D8D;
-    border-radius: 80px;
+    background-color: #361561;
+    border-radius: 20px;
 }
 
-.Login img {
+.img-fluid {
+    height: 100%;
     width: 100%;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .form-login {
-    padding-top: 100px;
+    padding-top: 180px;
+}
+
+.btn-login {
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #C93D8D;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    font-weight: bold;
+    color: #C93D8D;
+    background-color: white;
+}
+
+.Register {
+    color:#C93D8D;
+    text-decoration: none;
+}
+
+.Register:hover {
+    color:#f757b2;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
 }
 
 /*Login end*/ 

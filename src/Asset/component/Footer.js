@@ -2,6 +2,7 @@ import { Logo } from "./Logo";
 import FacebookLogo from '../img/facebook-logo.png'
 import TwitterLogo from '../img/twitter-logo.png'
 import YoutubeLogo from '../img/youtube-logo.png'
+import { Link } from "react-router-dom";
 
 export default function Footer (){
     return (
@@ -12,8 +13,8 @@ export default function Footer (){
                         
                         <div class="col">
 
-                            <ul>
-                            <a><Logo/></a>
+                            <ul class="Logo">
+                            <Logo/>
                             </ul>
 
                             <ul>
@@ -25,7 +26,7 @@ export default function Footer (){
 
                             <ul>
                                 <li class="title-footer">Account</li>
-                                <li>Login</li>
+                                <Link to="/Login" style={{textDecoration: 'none'}} ><li>Login</li></Link>
                                 <li>Register</li>
                             </ul>
 

@@ -42,6 +42,22 @@ function Header () {
              </div>
           </header>
 
+          <div class="header2">
+              <div class="container d-flex justify-content-center">
+                    <div class="mb-4">
+                        <a><img src={img_1}></img></a>
+                        <a><img src={img_1}></img></a>
+                        <a><img src={img_1}></img></a>
+                        <a><img src={img_1}></img></a>
+                        <a><img src={img_1}></img></a>
+                        <a><img src={img_1}></img></a>
+                        <a><img src={img_1}></img></a>
+                        <a><img src={img_1}></img></a>
+                    </div>
+              </div>
+              
+          </div>
+
           <div class="content2 text-light">
               <div class="container d-flex justify-content-center">
                   <div class="">
@@ -63,10 +79,20 @@ function Header () {
               </div>
           </div>
 
-          <div class="content3">
+          <div class="Category">
             <div class="container">
                     <h2>Category</h2>
-                    
+                    <ul>
+                        <li>Photography</li>
+                    </ul>
+
+                    <ul>
+                        <li>Photography</li>
+                    </ul>
+
+                    <ul>
+                        <li>Photography</li>
+                    </ul>
             </div>
           </div>
          </div> 

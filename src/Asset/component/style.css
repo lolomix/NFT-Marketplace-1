@@ -1,3 +1,19 @@
+/* Logo */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #C93D8D;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+/* Logo END */
+
 nav {
     padding: 100px;
 }
@@ -11,23 +27,9 @@ nav {
     padding: 20px;
 }
 
-.navbar a:hover {
+.nav a:hover {
     color: #C93D8D;
     font-weight: bold;
-}
-
-.logo {
-    color: white;
-    font-size: 24px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-}
-
-span {
-    color: #C93D8D;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
 }
 
 .btn-solid-login {
@@ -44,6 +46,17 @@ span {
 }
 
 /* Footer */
+footer .Logo {
+    margin-top: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
 
 footer {
     color: white;
@@ -51,6 +64,10 @@ footer {
     width: 100%;
     background-color: #1F0443;
     bottom: 0px;
+}
+
+footer li:hover {
+    color: #C93D8D;
 }
 
 .title-footer {
