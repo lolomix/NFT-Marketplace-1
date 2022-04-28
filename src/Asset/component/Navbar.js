@@ -7,11 +7,21 @@ import "./style.css"
 function Navbar () {
         return (
             <div>
+                <div class="nabar-background">
                 <nav class="navbar navbar-expand-sm fixed-top container">
                 <Logo/>
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                    </button>  
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
                      <div class="collapse navbar-collapse d-flex justify-content-end nav " id="navbarNavAltMarkup">
                       <div class="navbar-nav">
                       <a class=" nav-item nav-link" href="#" >Explore</a>
@@ -21,6 +31,7 @@ function Navbar () {
                       </div>
                      </div>
                 </nav>
+                </div>
             </div>
         )
     }
