@@ -151,25 +151,22 @@ h1 {
     padding: 20px;
 }
 
-.item-image-1 {
-    background-image: url("https://i.postimg.cc/s2RXV1vw/matt-roskovec-f-B3-u-W-TUcs-unsplash.jpg");
+.item-image {
     width: 400px;
     height: 250px;
     border-radius: 20px;
+}
+.item-image-1 {
+    background-image: url("https://i.postimg.cc/s2RXV1vw/matt-roskovec-f-B3-u-W-TUcs-unsplash.jpg");
+    
 }
 
 .item-image-2 {
     background-image: url("https://i.postimg.cc/B61yg5TC/anshita-nair-f-F0munh-TD4w-unsplash.jpg");
-    width: 400px;
-    height: 250px;
-    border-radius: 20px;
 }
 
 .item-image-3 {
     background-image: url("https://i.postimg.cc/6qMm6Htt/erik-mclean-Qzpgq-Elv-Si-A-unsplash.jpg");
-    width: 400px;
-    height: 250px;
-    border-radius: 20px;
 }
 
 .Category-item-title {
@@ -180,6 +177,34 @@ h1 {
 }
 
 /* Category 3 End*/
+
+/* Popular */
+.btn-buy {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #C93D8D;
+}
+
+.btn-buy:hover {
+    font-weight: bold;
+    color: #C93D8D;
+    background-color: #ffffff;
+}
+
+.Popular {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.popular-image {
+    padding: 20px;
+    height: 500px;
+    width: max-content;
+    background-color:#1F0443;
+    border-radius: 20px;
+}
+
+/* Popular END*/
 
 /* Content Last */
 

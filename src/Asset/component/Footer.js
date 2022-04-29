@@ -46,8 +46,8 @@ export default function Footer (){
 
                             <ul>
                                 <li class="title-footer">Contact</li>
-                                <li>(022)123 456</li>
-                                <li>Hello@nfteverywhere.com</li>
+                                <li>(022) 123 456</li>
+                                <li>Hello@nftcollection.com</li>
                                 <li class="sosmed">
                                     <a><img src={FacebookLogo}/></a>
                                     <a><img src={TwitterLogo}/></a>
@@ -58,6 +58,11 @@ export default function Footer (){
                         
                     </div>
                 </div>
+                <hr/>
+                <div class="pb-3 d-flex justify-content-center">
+                <a>© Copyright 2022 MiniProject Muchlisaryn</a>
+                </div>
+                
             </footer>
         </div>
     )

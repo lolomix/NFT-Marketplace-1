@@ -78,6 +78,26 @@ function Header () {
               </div>
           </div>
 
+
+            <div class="Popular">
+                <div class="container">
+                <h2 class="mb-4 row">Popular item</h2>
+                    <div class="popular-item row">
+                        <div class="col">
+                            <div class="popular-image">
+                                <img src="https://i.postimg.cc/gjCnwdQ9/andre-robida-JCPz-An5u-D9-Q-unsplash.jpg"></img>
+                                <p>Andre Robida
+                                    <a>price</a>
+                                </p>
+                                <p>Digital Render Art</p>
+                                <Link to="#"><a class="btn-buy d-flex justify-content-center"> Buy Now</a></Link>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
           <div class="Category">
             <div class="container">
                 <h2 class="mb-4 row">Category</h2>
