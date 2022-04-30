@@ -18,7 +18,7 @@ export default function Footer (){
                             </ul>
 
                             <ul>
-                                <li class="title-footer">Explore</li>
+                                <Link to="/Explore" style={{textDecoration: 'none'}}><li class="title-footer">Explore</li></Link>
                                 <li>Digital Arts</li>
                                 <li>Photography</li>
                                 <li>Music</li>

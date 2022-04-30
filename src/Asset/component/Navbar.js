@@ -24,7 +24,7 @@ function Navbar () {
 
                      <div class="collapse navbar-collapse d-flex justify-content-end nav " id="navbarNavAltMarkup">
                       <div class="navbar-nav">
-                      <a class=" nav-item nav-link" href="#" >Explore</a>
+                      <a class=" nav-item nav-link"><Link to="/Explore"  style={{textDecoration: 'none'}}>Explore</Link></a>
                       <a class=" nav-item nav-link" href="#" >Stats</a>
                       <a class=" nav-item nav-link" href="#" >Help</a>
                       <a class=" btn-solid-login"><Link to="/login" style={{textDecoration: 'none'}}>Login</Link></a>

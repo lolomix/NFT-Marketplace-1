@@ -3,19 +3,23 @@ import Footer from "../component/Footer"
 import IMG from '../img/Nicola.jpg'
 import { Logo } from "../component/Logo"
 import { Link } from "react-router-dom"
+import Swal from "sweetalert2"
 
-
-
-
-
+const onLogin = () => {
+    Swal.fire(
+        'Login Success',
+        'You clicked the button!',
+        'success'
+      )
+} 
 
 export default function Login () {
     return (
         <div>
             <Navbar/>
-             <section class="vh-100 Login">
+             <section class="Login">
              <div class="container h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="row d-flex justify-content-center align-items-center">
                 <div class="col col-xl-10">
                     <div class="card">
                     <div class="row g-0">
@@ -40,16 +44,24 @@ export default function Login () {
 
                             <div class="form-outline mb-4">
                             <label class="form-label" for="form2Example27">Password</label>
-                                <input type="password" id="form2Example27" class="form-control form-control-lg form" />
+                                <input type="password" id="form2Example27" class="form-control form-control-lg form"/>
                             </div>
 
-                            <a class="small text-muted" href="#!">Forgot password?</a>
-
-                            <div class="pt-3 mb-4">
-                                <a class="btn-login" onClick="$">Login</a>
+                            <div class="row pb-4">
+                                <div class="col-12 col-md-8">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+                                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                            </div>
+                                <div class="col-6 col-md-4 d-flex justify-content-end "><Link to="$" style={{textDecoration: 'none'}}><a class="Forgot-pw">Forgot password?</a></Link></div>
                             </div>
 
-                            <p class="pb-lg-2 pt-5" >Don't have an account? <Link to="/Register" style={{textDecoration: 'none'}}><a class="Register">Register here</a></Link></p>
+                            <div class="mb-4 btn-login ">
+                                <a type="button" class="btn btn-lg" onClick={onLogin}>Login</a>
+                            </div>
+
+                            <div class="mt-5">
+                            <p>Don't have an account? <Link to="/Register" style={{textDecoration: 'none'}}><a class="Register">Register here</a></Link></p>
+                            </div>
                             </form>
 
                         </div>
