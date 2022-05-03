@@ -20,8 +20,7 @@ h1 {
 
 
 .Header {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 }
 
 .title {
@@ -266,7 +265,10 @@ h1 {
 .Login {
     background-color: #1F0443;
     height: auto;
-    padding-top: 110px;
+}
+
+.login-content {
+    margin-top: 40px;
 }
 
 .card {

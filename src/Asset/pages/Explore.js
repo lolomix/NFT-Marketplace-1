@@ -6,8 +6,8 @@ import icon from "../img/ethereum.png"
 export default function Explore () {
     return (
         <div>
-        <Navbar/>
         <div class="Explore">
+        <Navbar/>
             <div class="container">
                 
                 <div class="p-4">

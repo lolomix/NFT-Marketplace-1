@@ -16,9 +16,9 @@ const onLogin = () => {
 export default function Login () {
     return (
         <div>
-            <Navbar/>
              <section class="Login">
-             <div class="container h-100">
+             <Navbar/>
+             <div class="login-content container h-100">
                 <div class="row d-flex justify-content-center align-items-center">
                 <div class="col col-xl-10">
                     <div class="card">

@@ -9,8 +9,8 @@ import icon from "../img/ethereum.png"
 function Header () {
     return (
         <div>
-            <Navbar/>
             <div class="LandingPage">
+            <Navbar/>
             <header>
              <div class="Header container col">
              <div class="row  ">

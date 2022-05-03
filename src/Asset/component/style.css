@@ -13,18 +13,19 @@
     font-family: 'Poppins', sans-serif;
 }
 /* Logo END */
+.navbar-wrapper {
+    font-size: 15px;
+}
 
-nav {
-    padding: 100px;
+.navbar-wrapper .content-end a {
+    margin-left: 20px;
+}
+
+.nav-item {
+    margin-left: 15px;
 }
 .navbar a {
     color: rgb(255, 255, 255);
-    padding: 5px;
-    margin: 8px;
-}
-
-.navbar-nav {
-    padding: 20px;
 }
 
 .nav a:hover {
@@ -33,8 +34,9 @@ nav {
 }
 
 .btn-solid-login {
-    border-radius: 10px;
+    padding: 10px;
     width: 80px;
+    border-radius: 10px;
     text-align: center;
     background-color: #C93D8D;
     text-decoration: none;
