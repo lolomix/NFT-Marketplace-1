@@ -10,8 +10,13 @@ export default function Explore () {
         <Navbar/>
             <div class="container">
                 
-                <div class="p-4">
-                <h1>Explore</h1>
+                <div class="row text-light pb-4 pt-4">
+                    <div class="col">
+                        <a class="ex-title fs-3">Explorer</a>
+                        <a class="ex-menu">Photography</a>
+                        <a class="ex-menu">Digital Art</a>
+                        <a class="ex-menu">Music</a>
+                    </div>
                 </div>
 
                 <div class="Content-explorer pb-4 row">
@@ -41,6 +46,7 @@ export default function Explore () {
                                     </Link>
                                 </div>
                     </div>
+                    
                     
 
                 </div>

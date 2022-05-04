@@ -7,8 +7,8 @@ import Swal from "sweetalert2"
 
 const onLogin = () => {
     Swal.fire(
+        'Success',
         'Login Success',
-        'You clicked the button!',
         'success'
       )
 } 
@@ -18,7 +18,7 @@ export default function Login () {
         <div>
              <section class="Login">
              <Navbar/>
-             <div class="login-content container h-100">
+             <div class="login-content container">
                 <div class="row d-flex justify-content-center align-items-center">
                 <div class="col col-xl-10">
                     <div class="card">
@@ -55,8 +55,8 @@ export default function Login () {
                                 <div class="col-6 col-md-4 d-flex justify-content-end "><Link to="$" style={{textDecoration: 'none'}}><a class="Forgot-pw">Forgot password?</a></Link></div>
                             </div>
 
-                            <div class="mb-4 btn-login ">
-                                <a type="button" class="btn btn-lg" onClick={onLogin}>Login</a>
+                            <div class="mb-4 btn-login">
+                                <a type="button" class="btn btn-lg text-light" onClick={onLogin}>Login</a>
                             </div>
 
                             <div class="mt-5">
