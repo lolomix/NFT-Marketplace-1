@@ -1,19 +1,45 @@
 import Navbar from "../component/Navbar"
+import { useState } from "react"
 import Footer from "../component/Footer"
 import IMG from '../img/Nicola.jpg'
 import { Logo } from "../component/Logo"
 import { Link } from "react-router-dom"
 import Swal from "sweetalert2"
 
-const onLogin = () => {
-    Swal.fire(
-        'Success',
-        'Login Success',
-        'success'
-      )
-} 
+
 
 export default function Login () {
+
+    const baseError = {
+        email: "",
+        Password: "",
+      }
+    
+    const [email, setEmail] = useState("")
+    const [erorMasage, setErorMassage] = useState (baseError);
+    const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[a-zA-Z0-9-]+)*$/
+    
+    const onChangeEmail = (e) => {
+        let value = e.target.value
+        setEmail(value) 
+      }
+
+    const onLogin = () => {
+        if (!regexEmail.test(email)) {
+            setErorMassage ({...erorMasage,[email] : Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Format Email anda salah',
+              })})
+        } else {
+            Swal.fire(
+                'Good job!',
+                'Login Succcess',
+                'success'
+              )
+        }
+    } 
+
     return (
         <div>
              <section class="Login">
@@ -38,8 +64,8 @@ export default function Login () {
                             <h5 class="fw-normal mb-3 pb-3">Login</h5>
 
                             <div class="form-outline mb-4">
-                                <label class="form-label" for="form2Example17">Username or email</label>
-                                <input type="email" id="form2Example17" class="form-control form-control-lg form" />
+                                <label class="form-label" for="form2Example17">Email</label>
+                                <input type="email" id="form2Example17" class="form-control form-control-lg form" value={email} onChange={onChangeEmail} />
                             </div>
 
                             <div class="form-outline mb-4">
@@ -71,8 +97,9 @@ export default function Login () {
                 </div>
                 </div>
             </div>
-            </section>
             <Footer/>
+            </section>
+            
         </div>
     )
    

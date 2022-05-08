@@ -42,7 +42,7 @@ function Navbar () {
                       <div class="navbar-nav">
                       <a class=" nav-item nav-link"><Link to="/Explore"  style={{textDecoration: 'none'}}>Explore</Link></a>
                       <a class=" nav-item nav-link" href="#" >Stats</a>
-                      <a class=" nav-item nav-link" href="#" >Help</a>
+                      <a class=" nav-item nav-link"><Link to="/Help" style={{textDecoration: 'none'}}>Help</Link></a>
                       <Link to="/login" style={{textDecoration: 'none'} } class=" nav-item btn-solid-login"><a>Login</a></Link>
                       </div>
                      </div>

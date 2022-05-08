@@ -47,12 +47,11 @@ export default function Explore () {
                                 </div>
                     </div>
                     
-                    
-
                 </div>
             </div> 
+            <Footer/>
         </div>
-        <Footer/>
+        
     </div>
     )
 }

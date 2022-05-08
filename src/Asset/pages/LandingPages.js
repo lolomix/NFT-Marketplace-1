@@ -11,7 +11,7 @@ function Header () {
         <div>
             <div class="LandingPage">
             <Navbar/>
-            <header>
+            <header row>
              <div class="Header container col">
              <div class="row  ">
                   <div class="title col-lg-4">
@@ -160,8 +160,11 @@ function Header () {
         </div>
 
          </div> 
-         <Footer/>    
+         <div class="background-footer">
+            <Footer/>
+            </div>
         </div>
+        
         )
    }
 
