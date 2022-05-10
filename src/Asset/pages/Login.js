@@ -12,9 +12,9 @@ export default function Login () {
 
     const baseError = {
         email: "",
-        Password: "",
       }
     
+    const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
     const [erorMasage, setErorMassage] = useState (baseError);
     const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -23,23 +23,33 @@ export default function Login () {
         let value = e.target.value
         setEmail(value) 
       }
+    
+    const onChangePassword = (e) => {
+        let value = e.target.value
+        setPassword(value) 
+      }
 
     const onLogin = () => {
         if (!regexEmail.test(email)) {
             setErorMassage ({...erorMasage,[email] : Swal.fire({
                 icon: 'error',
-                title: 'Oops...',
-                text: 'Format Email anda salah',
+                title: 'Login Gagal',
+                text: 'Email yang anda masukan tidak valid',
               })})
-        } else {
-            Swal.fire(
-                'Good job!',
-                'Login Succcess',
-                'success'
-              )
+        } if (password == "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Login Gagal',
+                text: 'Password wajib di isi',
+              })
+        } if ( email == "" && password == "" ) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Login Gagal',
+                text: 'Form Wajib diisi',
+              })
         }
     } 
-
     return (
         <div>
              <section class="Login">
@@ -70,7 +80,7 @@ export default function Login () {
 
                             <div class="form-outline mb-4">
                             <label class="form-label" for="form2Example27">Password</label>
-                                <input type="password" id="form2Example27" class="form-control form-control-lg form"/>
+                                <input type="password" id="form2Example27" class="form-control form-control-lg form" value={password} onChange={onChangePassword}/>
                             </div>
 
                             <div class="row pb-4">

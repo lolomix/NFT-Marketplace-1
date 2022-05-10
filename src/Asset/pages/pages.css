@@ -412,3 +412,68 @@ a:hover {
     background-color:#1F0443;
 }
 /* End Help */
+
+/* Dashboard */
+.Dashboard {
+    background-color: #120227;
+    width: auto;
+    min-height: auto ;
+}
+
+.title-dashboard {
+    text-decoration: none;
+    font-size: 20px;
+}
+/* end Dashboard */
+
+.create-collection {
+    margin-top: 25px;
+    background-color:#1F0443;
+    border-radius: 10px;
+    height: 400px;
+}
+
+
+.create-collection input {
+    margin-top:15px;
+    color: white;
+    width: 500px;
+    height: 35px;
+    background-color: #361561;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.external-link {
+    margin-right: 80px;
+    margin-left: 30px;
+}
+
+.create-collection .name {
+    margin-right: 125px;
+    margin-left: 30px;
+}
+.create-collection .description {
+    margin-right:90px ;
+    margin-left: 30px;
+}
+.create-collection .price {
+    margin-right:135px ;
+    margin-left: 30px;
+}
+
+.form-price {
+    margin-bottom: 20px;
+}
+.btn-upload {
+    padding: 10px;
+    background-color: #be237b;
+    margin-left: 200px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+.btn-upload:hover {
+    background-color:#a11263;
+}

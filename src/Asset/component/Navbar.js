@@ -15,7 +15,7 @@ function Navbar () {
                 <div class="container pt-3 navbar-wrapper text-light"> 
                     <div class="row">
                         <div class="col">
-                            <a>Dashboard</a>
+                            <Link to="/Create-Collection" style={{textDecoration: 'none'} }><a>Create Collection</a></Link>
                         </div>
                         <div class="content-end d-flex justify-content-end col">
                             <a>Hak Kekayaan Intelektual</a>

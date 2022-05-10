@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import DashboardCreate from './Asset/pages/Dashboard/DashboardCreate';
+import DashboardMyCollection from './Asset/pages/Dashboard/DashboardMyCollection'
 import Explore from './Asset/pages/Explore';
 import Help from './Asset/pages/Help';
 import LandingPage from './Asset/pages/LandingPages';
@@ -16,6 +18,8 @@ function App() {
           <Route path="Register" element={<Register/>}/>
           <Route path="Explore" element={<Explore/>}/>
           <Route path="Help" element={<Help/>}/>
+          <Route path="Create-Collection" element={<DashboardCreate/>}/>
+          <Route path='My-Collection' element={<DashboardMyCollection/>}></Route>
       </Routes>
     </BrowserRouter>
   );
