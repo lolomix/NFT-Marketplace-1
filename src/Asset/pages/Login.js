@@ -17,7 +17,7 @@ export default function Login () {
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
     const [erorMasage, setErorMassage] = useState (baseError);
-    const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.[a-zA-Z0-9-]+)*$/
+    const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.com+)*$/
     
     const onChangeEmail = (e) => {
         let value = e.target.value
@@ -42,11 +42,11 @@ export default function Login () {
                 title: 'Login Gagal',
                 text: 'Password wajib di isi',
               })
-        } if ( email == "" && password == "" ) {
+        } if ( email != "" == password != "" ) {
             Swal.fire({
                 icon: 'error',
                 title: 'Login Gagal',
-                text: 'Form Wajib diisi',
+                text: 'Form belum diisi',
               })
         }
     } 
@@ -56,7 +56,7 @@ export default function Login () {
              <Navbar/>
              <div class="login-content container">
                 <div class="row d-flex justify-content-center align-items-center">
-                <div class="col col-xl-10">
+                <div class="col">
                     <div class="card">
                     <div class="row g-0">
                         <div class="col-md-6 col-lg-5 d-none d-md-block">

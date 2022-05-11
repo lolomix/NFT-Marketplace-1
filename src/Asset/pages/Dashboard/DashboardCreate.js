@@ -38,7 +38,7 @@ export default function DashboardCreate () {
             Swal.fire({
                 icon: 'error',
                 title: 'Upload Gagal',
-                text: 'Anda Harus mengisi dengan lengkap',
+                text: 'Input Harus diisi dengan lengkap',
               })
         }
     }
@@ -60,7 +60,6 @@ export default function DashboardCreate () {
             </div>
             </div>
             <div class="col create-collection">
-
                 <form class="mt-4">
                     <label class="external-link ">External Link</label>
                     <input type="Link" value={link} onChange={onChangeLink}></input>
