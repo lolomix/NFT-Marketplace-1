@@ -2,10 +2,6 @@ import React from "react"
 import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
 import "./style.css"
-import FacebookLogo from '../img/facebook-logo.png'
-import TwitterLogo from '../img/twitter-logo.png'
-import YoutubeLogo from '../img/youtube-logo.png'
-
 
 
 function Navbar () {

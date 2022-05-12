@@ -1,7 +1,6 @@
 import Navbar from "../component/Navbar"
 import { useState } from "react"
 import Footer from "../component/Footer"
-import IMG from '../img/Nicola.jpg'
 import { Logo } from "../component/Logo"
 import { Link } from "react-router-dom"
 import Swal from "sweetalert2"
@@ -55,7 +54,13 @@ export function Register() {
                 title: 'Login Gagal',
                 text: 'Email yang anda masukan tidak valid',
               })})
-        } if (password == "") {
+        } if( email == "") {
+          Swal.fire({
+            icon: 'error',
+            title: 'Email Belum Di isi',
+            text: 'Silahkan Cek Kembali Email Anda',
+          })
+        }if (password == "") {
             Swal.fire({
                 icon: 'error',
                 title: 'Login Gagal',
@@ -64,16 +69,16 @@ export function Register() {
         } if ( password != ConfirmPassword ) {
           Swal.fire({
             icon: 'error',
-            title: 'Password Tidak sama',
-            text: 'Silahkan cek kembali password anda',
+            title: 'Password harus sama',
+            text: 'Silahkan di cek kembali',
           })
-        } if ( firstName == "" && email == "" && password == "" ) {
+        } if ( email != "" == password != "" == firstName != "" == lastName != "" ) {
           Swal.fire({
               icon: 'error',
-              title: 'Form Harus di isi',
-              text: 'Cek Kembali Form anda',
+              title: 'Form Harus di isi semuanya',
+              text: 'Silahkan cek kembali',
             })
-      } 
+      }
     } 
     return (
         <div>
@@ -85,7 +90,7 @@ export function Register() {
                     <div class="card">
                     <div class="row g-0">
                         <div class="col-md-6 col-lg-5 d-none d-md-block">
-                        <img src={IMG} class="img-fluid" alt="Responsive image" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/NFT-art.jpg?alt=media&token=1d0f4ac4-c277-421a-9819-7a672b830c26" class="img-fluid" alt="Responsive image" />
                         </div>
                         <div class="col-md-6 col-lg-7 d-flex align-items-center">
                         <div class="card-body p-4 p-lg-5 text-light">
@@ -96,16 +101,16 @@ export function Register() {
                                 <span class="fw-bold mb-0"><Logo/></span>
                             </div>
 
-                            <h5 class="fw-normal mb-3 pb-3">Register</h5>
+                            <h5 class="fw-normal mb-3 pb-3">Login</h5>
 
                             <div class="row">
                             <div class="form-outline mb-4 col">
                                 <label class="form-label" for="form2Example17">First Name</label>
-                                <input type="name" id="form2Example17" class="form-control form-control-lg form" value={firstName} onChange={onChangeFirstName}/>
+                                <input type="text" id="form2Example17" class="form-control form-control-lg form" value={firstName} onChange={onChangeFirstName}/>
                             </div>
                               <div class="col">
                               <label class="form-label" for="form2Example17">Last Name</label>
-                                <input type="email" id="form2Example17" class="form-control form-control-lg form" value={lastName} onChange={onChangeLastName} />
+                                <input type="text" id="form2Example17" class="form-control form-control-lg form" value={lastName} onChange={onChangeLastName} />
                               </div>
                             </div>
 
@@ -130,7 +135,7 @@ export function Register() {
                             </div>
 
                             <div class="mt-5">
-                            <p>Don't have an account? <Link to="/Register" style={{textDecoration: 'none'}}><a class="Register">Register here</a></Link></p>
+                            <p>Already Registered? <Link to="/Login" style={{textDecoration: 'none'}}><a class="Register">Login Now</a></Link></p>
                             </div>
                             </form>
 

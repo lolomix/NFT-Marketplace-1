@@ -39,7 +39,7 @@ export default function Login () {
         } if (password == "") {
             Swal.fire({
                 icon: 'error',
-                title: 'Login Gagal',
+                title: 'Password Salah',
                 text: 'Password wajib di isi',
               })
         } if ( email != "" == password != "" ) {
@@ -60,7 +60,7 @@ export default function Login () {
                     <div class="card">
                     <div class="row g-0">
                         <div class="col-md-6 col-lg-5 d-none d-md-block">
-                        <img src={IMG} alt="login form" class="img-fluid" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/NFT-art.jpg?alt=media&token=1d0f4ac4-c277-421a-9819-7a672b830c26" alt="login form" class="img-fluid" />
                         </div>
                         <div class="col-md-6 col-lg-7 d-flex align-items-center">
                         <div class="card-body p-4 p-lg-5 text-light">

@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import DashboardCreate from './Asset/pages/Dashboard/DashboardCreate';
 import DashboardMyCollection from './Asset/pages/Dashboard/DashboardMyCollection'
-import Explore from './Asset/pages/Explore';
+import Explore from './Asset/pages/Explorer/Explore';
 import Help from './Asset/pages/Help';
 import LandingPage from './Asset/pages/LandingPages';
 import  Login  from "./Asset/pages/Login";

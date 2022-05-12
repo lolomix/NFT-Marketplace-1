@@ -210,8 +210,15 @@ h1 {
     border-radius: 10px;
 }
 
-.popular-image img {
+.item-image img {
     border-radius: 10px;
+    width: 265px;
+    height: 320px;
+    
+}
+
+.desc-item {
+    padding-top: 70px;
 }
 
 
@@ -339,6 +346,7 @@ a:hover {
     margin-right: 20px;
 }
 
+
 .ex-menu {
     border-radius: 10px;
     text-decoration: none;
@@ -347,7 +355,14 @@ a:hover {
     background-color:#C93D8D;
 }
 
+
 .ex-menu:hover {
+    font-weight: 600;
+    color: #C93D8D;
+    background-color: white;
+}
+
+.menu-active {
     font-weight: 600;
     color: #C93D8D;
     background-color: white;
