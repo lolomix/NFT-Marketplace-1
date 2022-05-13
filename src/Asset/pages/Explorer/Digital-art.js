@@ -7,6 +7,7 @@ export default function DigitalArts ({
     price
 }) {
     return (
+        
         <div class="col p-2 text-light">   
         <div class="popular-image">
                 <div class="item-image pb-4">
@@ -30,7 +31,7 @@ export default function DigitalArts ({
                     </div>
                 </div>
                 <Link to="#" style={{textDecoration: 'none'}}>
-                    <a class="btn-buy d-flex justify-content-center">Buy Now</a>
+                    <Link to="/Payment"  style={{textDecoration: 'none'}}><a class="btn-buy d-flex justify-content-center">Buy Now</a></Link>
                 </Link>
             </div>
     </div>

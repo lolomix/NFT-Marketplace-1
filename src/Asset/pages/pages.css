@@ -7,6 +7,14 @@
     display: block;
 }
 
+.alert {
+    text-decoration: none;
+    width:max-content;
+}
+
+.alert span {
+    font-weight: bold;
+}
 .background-footer {
     background-color:#1F0443 ;
 }

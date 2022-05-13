@@ -48,35 +48,46 @@ export function Register() {
       }
 
     const onLogin = () => {
-        if (!regexEmail.test(email)) {
-            setErorMassage ({...erorMasage,[email] : Swal.fire({
-                icon: 'error',
-                title: 'Login Gagal',
-                text: 'Email yang anda masukan tidak valid',
-              })})
-        } if( email == "") {
+        if( password != ConfirmPassword ) {
           Swal.fire({
             icon: 'error',
-            title: 'Email Belum Di isi',
-            text: 'Silahkan Cek Kembali Email Anda',
+            title: 'Password tidak sama',
           })
-        }if (password == "") {
-            Swal.fire({
-                icon: 'error',
-                title: 'Login Gagal',
-                text: 'Password wajib di isi',
-              })
-        } if ( password != ConfirmPassword ) {
+        } if (ConfirmPassword == "") {
+          Swal.fire({
+              icon: 'error',
+              title: 'Confirm Password Masih Kosong',
+            })
+      }if (password == "") {
+          Swal.fire({
+              icon: 'error',
+              title: 'Password Masih Kosong',
+            })
+      }if (!regexEmail.test(email)) {
+        setErorMassage ({...erorMasage,[email] : Swal.fire({
+            icon: 'error',
+            title: 'Login Gagal',
+            text: 'Email yang anda masukan tidak valid',
+          })})
+      } if( email == "") {
           Swal.fire({
             icon: 'error',
-            title: 'Password harus sama',
-            text: 'Silahkan di cek kembali',
+            title: 'Email masih kosong',
+          })
+        } if (lastName == "") {
+          Swal.fire({
+            icon: 'error',
+            title: 'Last Name Masih Kosong',
+          })
+        } if (firstName == "") {
+          Swal.fire({
+            icon: 'error',
+            title: 'First Name Masih Kosong',
           })
         } if ( email != "" == password != "" == firstName != "" == lastName != "" ) {
           Swal.fire({
               icon: 'error',
-              title: 'Form Harus di isi semuanya',
-              text: 'Silahkan cek kembali',
+              title: 'Form Masih Kosong',
             })
       }
     } 

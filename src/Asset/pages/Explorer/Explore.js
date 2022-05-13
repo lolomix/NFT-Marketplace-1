@@ -35,8 +35,8 @@ export default function Explore () {
                 <div class="row text-light pb-4 pt-4">
                     <div class="col">
                         <a class="ex-title fs-3">Explorer</a>
-                        <a class="ex-menu">Photography</a>
                         <a class="ex-menu menu-active">Digital Art</a>
+                        <a class="ex-menu">Photography</a>
                         <a class="ex-menu">Music</a>
                     </div>
                 </div>
