@@ -2,6 +2,7 @@ import Footer from '../../component/Footer'
 import Navbar from '../../component/Navbar'
 import { gql, useQuery } from '@apollo/client'
 import DigitalArts from './Digital-art'
+import Loading from "../../component/Loading"
 
 const GetDataExplorer = gql`
 query MyQuery {
@@ -19,7 +20,7 @@ export default function Explore () {
     const {data, loading, error} = useQuery(GetDataExplorer)
 
     if(loading) {
-        <h1>loading</h1>
+        return <Loading/>
     }
 
     if(error) {

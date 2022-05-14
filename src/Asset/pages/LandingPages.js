@@ -4,9 +4,22 @@ import Footer from "../component/Footer"
 import Navbar from "../component/Navbar"
 import { Link } from "react-router-dom"
 import icon from "../img/ethereum.png"
+import { gql, useQuery } from "@apollo/client"
 
+const listPopular = gql`
+query MyQuery {
+    popular {
+      image
+      name
+      price
+      description
+    }
+  }
+`
 
 function Header () {
+    const listPopularQuery = useQuery(listPopular)
+
     return (
         <div>
             <div class="LandingPage">
@@ -95,13 +108,17 @@ function Header () {
                             </Link>
                         </div>
 
+                        
                         <div class="col pt-4 ">
+                        <Link to="/Explore">
                             <div class="item-image item-image-2 ">
                                 <div class=" d-flex justify-content-end">
                                     <div class="Category-item-title d-flex justify-content-end">Digital Arts</div>
                                 </div>
                             </div>
+                            </Link>
                         </div>
+                        
 
                         <div class="col pt-4">
                             <div class="item-image item-image-3 ">
@@ -116,35 +133,37 @@ function Header () {
 
           <div class="Popular">
                 <div class="container">
-                <h2 class="mb-4 row">Popular item</h2>
+                 <h2 class="mb-4 row">Popular item</h2>
                     <div class="popular-item row">
-                        
-                    <div class="col">   
+                        {listPopularQuery.data?.popular.map((list) => (
+                        <div class="col p-2">   
                             <div class="popular-image">
-                                    <img src="https://i.postimg.cc/gjCnwdQ9/andre-robida-JCPz-An5u-D9-Q-unsplash.jpg"></img>
-                                    <div class="row mt-3 mb-4">
+                                    <div class="item-image">
+                                    <img src={list.image}></img>
+                                    </div>
+                                    <div class="desc-item row mt-3">
                                         <div class="col-7">
                                             <p class="Artist-Name">Andre Robida</p>
                                         </div>
-                                            <div class="col-4 d-flex justify-content-end">
+                                            <div class="col d-flex justify-content-end">
                                                     <p>Price</p>   
                                             </div>
-                                        <div class="row">
-                                            <div class="col-sm-7">
-                                                <a>Digital Render Art</a>
+                                    </div>
+                                    <div class="row mb-4">
+                                            <div class="col">
+                                                <a>{list.description}</a>
                                             </div>
                                             <div class="col-5 d-flex justify-content-end">
                                                 <a><img src={icon}></img></a>
-                                                <p>9</p>
+                                                <p>{list.price}</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <Link to="#" style={{textDecoration: 'none'}}>
+                                    <Link to="/explore/:description" style={{textDecoration: 'none'}}>
                                         <a class="btn-buy d-flex justify-content-center">Buy Now</a>
                                     </Link>
-                                </div>
-                    </div>
-
+                        </div>
+                        </div>
+                    ))}         
                 </div>                    
                 </div>
             </div>

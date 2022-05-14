@@ -31,6 +31,9 @@ export default function Login () {
     useEffect (() => {
         if (data?.login.length === 1) {
             console.log("data", data);
+            if (loading) {
+                <Loading/>
+            }
             Swal.fire({
                 icon: 'success',
                 title: 'Login Berhasil',

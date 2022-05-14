@@ -7,6 +7,7 @@ import Help from './Asset/pages/Help';
 import LandingPage from './Asset/pages/LandingPages';
 import  Login  from "./Asset/pages/Login";
 import { Register } from './Asset/pages/Register';
+import Payment from "../src/Asset/pages/Explorer/Payment"
 
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
           <Route path="Explore" element={<Explore/>}/>
           <Route path="Help" element={<Help/>}/>
           <Route path="Create-Collection" element={<DashboardCreate/>}/>
-          <Route path='My-Collection' element={<DashboardMyCollection/>}></Route>
-      </Routes>
+          <Route path='My-Collection' element={<DashboardMyCollection/>}/>
+          <Route path='/Explore/:description' element={<Payment/>}></Route>
+      </Routes> 
     </BrowserRouter>
   );
 }

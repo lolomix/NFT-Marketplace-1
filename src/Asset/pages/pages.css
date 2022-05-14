@@ -1,3 +1,16 @@
+/*Alert Login*/
+.alert {
+    text-decoration: none;
+    width:max-content;
+}
+
+.alert span {
+    font-weight: bold;
+}
+/*End Alert Login*/
+
+
+
 .LandingPage {
     background-image:url("../img/Background-Header.png");
     background-size: cover;
@@ -7,14 +20,6 @@
     display: block;
 }
 
-.alert {
-    text-decoration: none;
-    width:max-content;
-}
-
-.alert span {
-    font-weight: bold;
-}
 .background-footer {
     background-color:#1F0443 ;
 }
@@ -208,6 +213,14 @@ h1 {
 
 .Artist-Name {
     opacity: 70%;
+}
+
+.explorer-item {
+    padding: 20px;
+    height: 540px;
+    width: 307px;
+    background-color:#1F0443;
+    border-radius: 10px;
 }
 
 .popular-image {
@@ -500,3 +513,45 @@ a:hover {
 .btn-upload:hover {
     background-color:#a11263;
 }
+
+/* Payment pages*/
+.Payment {
+    background-color: #120227;
+    height: 100%;
+    width: 100%;
+}
+
+.Payment-image{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.Payment-content {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.btn-payment {
+    background-color: #be237b;
+    padding: 10px;
+    color: white;
+}
+
+
+.btn-payment:hover {
+    background-color: #a11263;
+    color: white;
+}
+
+.Summary {
+    font-size: large;
+    opacity: 50%;
+    text-decoration: none;
+}
+
+.content-end {
+    font-weight: bold;
+    color: #be237b;
+}
+/* End Payment pages*/

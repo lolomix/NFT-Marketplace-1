@@ -8,7 +8,7 @@ function Navbar () {
         return (
             <div>
                 <div class="nabar-background">
-                <div class="container pt-3 navbar-wrapper text-light"> 
+                {/* <div class="container pt-3 navbar-wrapper text-light"> 
                     <div class="row">
                         <div class="col">
                             <Link to="/Create-Collection" style={{textDecoration: 'none'} }><a>Create Collection</a></Link>
@@ -19,7 +19,7 @@ function Navbar () {
                             </div>
                     </div>
                 </div>
-                <hr class="text-light"/>
+                <hr class="text-light"/> */}
                 <nav class="navbar navbar-expand-sm container">
                 <Logo/>
                 <button
