@@ -30,9 +30,7 @@ export default function DigitalArts ({
                             <p>{price}</p>
                         </div>
                 </div>
-                <Link to="#" style={{textDecoration: 'none'}}>
-                    <Link to="/explore/:description"  style={{textDecoration: 'none'}}><a class="btn-buy d-flex justify-content-center">Buy Now</a></Link>
-                </Link>
+                    <Link to="/Payment"  style={{textDecoration: 'none'}}><a class="btn-buy d-flex justify-content-center">Buy Now</a></Link>
             </div>
     </div>
     )

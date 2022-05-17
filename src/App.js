@@ -15,13 +15,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage/>}/>
-          <Route path="Login" element={<Login/>}/>
-          <Route path="Register" element={<Register/>}/>
-          <Route path="Explore" element={<Explore/>}/>
-          <Route path="Help" element={<Help/>}/>
-          <Route path="Create-Collection" element={<DashboardCreate/>}/>
-          <Route path='My-Collection' element={<DashboardMyCollection/>}/>
-          <Route path='/Explore/:description' element={<Payment/>}></Route>
+          <Route path="/Login" element={<Login/>}/>
+          <Route path="/Register" element={<Register/>}/>
+          <Route path="/Explore" element={<Explore/>}/>
+          <Route path="/Help" element={<Help/>}/>
+          <Route path="/Create-Collection" element={<DashboardCreate/>}/>
+          <Route path='/My-Collection' element={<DashboardMyCollection/>}/>
+          <Route path='/Payment/:id' element={<Payment/>}></Route>
       </Routes> 
     </BrowserRouter>
   );

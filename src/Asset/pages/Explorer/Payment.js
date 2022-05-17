@@ -2,6 +2,7 @@ import Footer from "../../component/Footer";
 import Navbar from "../../component/Navbar";
 import Swal from "sweetalert2";
 import { gql ,useQuery } from "@apollo/client";
+import { useParams } from "react-router-dom";
 
 const onPayment = () => {
     if (true) {
@@ -27,13 +28,15 @@ query MyQuery {
 
 export default function Payment () {
     const listItemQuery = useQuery(listItem)
+    const {id} = useParams();
+ 
 
     return (
         <div class="Payment">
             <Navbar/>
            <div class="container text-light">
            <div class="Payment-content">
-            {listItemQuery.data?.explore_nft.map((list) => (
+            {listItemQuery.data?.explore_nft.filter((list) => list.id === id).map((list) => (
             <div  class="row">
                 <div class="col d-flex justify-content-center">
                     <img class="Payment-image " src="https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/aldi-sigun-K-sdQ12jZeY-unsplash.jpg?alt=media&token=043aa742-15e2-46a9-8da9-4e8fdc6d11e4"></img>
