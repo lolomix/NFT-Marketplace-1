@@ -12,7 +12,8 @@
 
 
 .LandingPage {
-    background-image:url("../img/Background-Header.png");
+    background:url('https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/Background-Header.png?alt=media&token=6729884f-d230-4765-b8c2-c073a76ceca7');
+    /* background-color:#120227; */
     background-size: cover;
     max-height: 100%;
     min-width: 100%;

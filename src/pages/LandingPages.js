@@ -13,6 +13,7 @@ query MyQuery {
       name
       price
       description
+      id
     }
   }
 `
@@ -143,7 +144,7 @@ function Header () {
                                     </div>
                                     <div class="desc-item row mt-3">
                                         <div class="col-7">
-                                            <p class="Artist-Name">Andre Robida</p>
+                                            <p class="Artist-Name">{list.name}</p>
                                         </div>
                                             <div class="col d-flex justify-content-end">
                                                     <p>Price</p>   
@@ -158,7 +159,7 @@ function Header () {
                                                 <p>{list.price}</p>
                                             </div>
                                         </div>
-                                    <Link to="/explore/:description" style={{textDecoration: 'none'}}>
+                                    <Link to={`/Payment/${list.id}`} style={{textDecoration: 'none'}}>
                                         <a class="btn-buy d-flex justify-content-center">Buy Now</a>
                                     </Link>
                         </div>

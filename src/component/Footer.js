@@ -30,11 +30,11 @@ export default function Footer (){
                                 <li>Register</li>
                             </ul>
 
-                            <ul>
+                            {/* <ul>
                                 <li class="title-footer">Statst</li>
                                 <li>Ranking</li>
                                 <li>Activity</li>
-                            </ul>
+                            </ul> */}
 
                             <ul>
                                 <li class="title-footer">Company</li>

@@ -1,14 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import DashboardCreate from './Asset/pages/Dashboard/DashboardCreate';
-import DashboardMyCollection from './Asset/pages/Dashboard/DashboardMyCollection'
-import Explore from './Asset/pages/Explorer/Explore';
-import Help from './Asset/pages/Help';
-import LandingPage from './Asset/pages/LandingPages';
-import  Login  from "./Asset/pages/Login";
-import { Register } from './Asset/pages/Register';
-import Payment from "../src/Asset/pages/Explorer/Payment"
-
+import Explore from './pages/Explorer/Explore';
+import Help from './pages/Help';
+import LandingPage from './pages/LandingPages';
+import  Login  from "./pages/Login";
+import { Register } from './pages/Register';
+import Payment from "./pages/Payment"
 
 function App() {
   return (
@@ -19,9 +16,7 @@ function App() {
           <Route path="/Register" element={<Register/>}/>
           <Route path="/Explore" element={<Explore/>}/>
           <Route path="/Help" element={<Help/>}/>
-          <Route path="/Create-Collection" element={<DashboardCreate/>}/>
-          <Route path='/My-Collection' element={<DashboardMyCollection/>}/>
-          <Route path='/Payment/:id' element={<Payment/>}></Route>
+          <Route path="/Payment/:id" element={<Payment/>}></Route>
       </Routes> 
     </BrowserRouter>
   );

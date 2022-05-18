@@ -11,9 +11,9 @@ query MyQuery {
       name
       description
       price
+      id
     }
   }
-  
 `
 
 export default function Explore () {
@@ -50,6 +50,7 @@ export default function Explore () {
                     gambar={item.gambar}
                     description={item.description}
                     price={item.price}
+                    id={item.id}
                 />
                 )}
                 </div>

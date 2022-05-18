@@ -4,10 +4,12 @@ export default function DigitalArts ({
     name,
     gambar,
     description,
-    price
+    price,
+    id
 }) {
+
     return (
-        
+       
     <div class="col p-2 text-light">   
         <div class="explorer-item ">
                 <div class="item-image pb-4">
@@ -30,7 +32,7 @@ export default function DigitalArts ({
                             <p>{price}</p>
                         </div>
                 </div>
-                    <Link to="/Payment"  style={{textDecoration: 'none'}}><a class="btn-buy d-flex justify-content-center">Buy Now</a></Link>
+                    <Link to={`/Payment/${id}/`}  style={{textDecoration: 'none'}}><a class="btn-buy d-flex justify-content-center">Buy Now</a></Link>
             </div>
     </div>
     )

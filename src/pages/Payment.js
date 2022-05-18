@@ -1,5 +1,5 @@
-import Footer from "../../component/Footer";
-import Navbar from "../../component/Navbar";
+import Navbar from '../component/Navbar'
+import Footer from '../component/Footer'
 import Swal from "sweetalert2";
 import { gql ,useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
@@ -27,7 +27,7 @@ query MyQuery {
 
 
 export default function Payment () {
-    const listItemQuery = useQuery(listItem)
+    const listItemQuery = useQuery(listItem);
     const {id} = useParams();
  
 
