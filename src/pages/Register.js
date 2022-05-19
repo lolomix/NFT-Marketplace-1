@@ -66,8 +66,7 @@ export function Register() {
       }if (!regexEmail.test(email)) {
         setErorMassage ({...erorMasage,[email] : Swal.fire({
             icon: 'error',
-            title: 'Login Gagal',
-            text: 'Email yang anda masukan tidak valid',
+            title: 'Email Tidak Valid',
           })})
       } if( email == "") {
           Swal.fire({

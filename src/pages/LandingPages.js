@@ -1,5 +1,6 @@
-import React from "react"
-import './pages.css'
+import React from "react";
+import './pages.css';
+import './media.css'
 import Footer from "../component/Footer"
 import Navbar from "../component/Navbar"
 import { Link } from "react-router-dom"
@@ -101,7 +102,7 @@ function Header () {
                     <div class="Category-item row">
                         <div class="col pt-4">
                             <Link to="#" style={{textDecoration: 'none'}}>
-                            <div class="item-image item-image-1 ">
+                            <div class="category-image item-image-1 ">
                                 <div class=" d-flex justify-content-end">
                                     <div class="Category-item-title d-flex justify-content-end">Photography</div>
                                 </div>
@@ -111,8 +112,8 @@ function Header () {
 
                         
                         <div class="col pt-4 ">
-                        <Link to="/Explore">
-                            <div class="item-image item-image-2 ">
+                        <Link to="/Explore" style={{textDecoration: 'none'}}>
+                            <div class="category-image item-image-2 ">
                                 <div class=" d-flex justify-content-end">
                                     <div class="Category-item-title d-flex justify-content-end">Digital Arts</div>
                                 </div>
@@ -122,7 +123,7 @@ function Header () {
                         
 
                         <div class="col pt-4">
-                            <div class="item-image item-image-3 ">
+                            <div class="category-image item-image-3 ">
                                 <div class=" d-flex justify-content-end">
                                     <div class="Category-item-title d-flex justify-content-end">Music</div>
                                 </div>

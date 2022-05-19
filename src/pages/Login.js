@@ -58,14 +58,12 @@ export default function Login () {
         if (!regexEmail.test(email)) {
             setErorMassage ({...erorMasage,[email] : Swal.fire({
                 icon: 'error',
-                title: 'Login Gagal',
-                text: 'Email yang anda masukan tidak valid',
+                title: 'Email tidak valid',
               })})
         } if (password == "") {
             Swal.fire({
                 icon: 'error',
-                title: 'Password Salah',
-                text: 'Password wajib di isi',
+                title: 'Password Wajib di isi',
               })
         } if ( email != "" == password != "" ) {
             Swal.fire({

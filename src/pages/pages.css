@@ -21,6 +21,8 @@
     display: block;
 }
 
+
+
 .background-footer {
     background-color:#1F0443 ;
 }
@@ -91,6 +93,7 @@ h1 {
 
 .img_2 img {
     width: 250px;
+    height: 300px;
     border-radius: 10px;
 }
 
@@ -101,6 +104,7 @@ h1 {
 
 .img_3 img {
     width: 200px;
+    height: 250px;
     border-radius: 10px;
 }
 
@@ -165,6 +169,12 @@ h1 {
 
 .Category {
     padding: 20px;
+}
+
+.category-image {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
 }
 
 .item-image {
