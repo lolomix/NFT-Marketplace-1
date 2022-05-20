@@ -152,7 +152,7 @@ function Header () {
                                             </div>
                                     </div>
                                     <div class="row mb-4">
-                                            <div class="col">
+                                            <div class="col popular-description">
                                                 <a>{list.description}</a>
                                             </div>
                                             <div class="col-5 d-flex justify-content-end">

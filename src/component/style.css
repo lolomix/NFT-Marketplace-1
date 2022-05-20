@@ -99,3 +99,20 @@ footer li:hover {
 .sosmed a{
     padding: 5px;
 }
+
+@media screen and (max-width: 990px) {
+    footer .logo {
+        margin-right: 300px;
+    }
+     
+
+    .Footer-List ul {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Footer-List ul {
+        padding: 17px;
+    }
+}

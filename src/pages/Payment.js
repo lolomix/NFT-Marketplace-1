@@ -29,6 +29,7 @@ query MyQuery {
 export default function Payment () {
     const listItemQuery = useQuery(listItem);
     const {id} = useParams();
+    console.log(id)
 
     return (
         <div class="Payment">

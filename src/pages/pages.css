@@ -177,11 +177,7 @@ h1 {
     border-radius: 20px;
 }
 
-.item-image {
-    width: 400px;
-    height: 250px;
-    border-radius: 20px;
-}
+
 .item-image-1 {
     background-image: url("https://i.postimg.cc/s2RXV1vw/matt-roskovec-f-B3-u-W-TUcs-unsplash.jpg");
     
@@ -240,6 +236,10 @@ h1 {
     width: 307px;
     background-color:#1F0443;
     border-radius: 10px;
+}
+
+.item-image {
+    height: 250px;
 }
 
 .item-image img {

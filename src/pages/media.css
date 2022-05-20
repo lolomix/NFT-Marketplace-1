@@ -34,4 +34,50 @@
         width: 200px;
         height: 125px;
     }
+
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .title h1 {
+        font-size: 40px;
+    }
+    .img_1 img {
+        width: 130px;
+        height: 170px;
+        border-radius: 8px;
+    }
+
+    .img_1 {
+        margin-top: 50px;
+    }
+
+    .img_2 img {
+        width: 180px;
+        height: 230px;
+    }
+
+    .img_2 {
+        margin-top: 180px;
+    }
+
+    .img_3 img {
+        width: 130px;
+        height: 170px;
+        border-radius: 8px;
+    }
+    
+    .img_3 {
+        margin-top: 50px;
+    }
+    
+    .header2 {
+        text-align: center;
+    }
+
+    .category-image {
+        width: 260px;
+        height: 185px;
+    }
+    
 }
