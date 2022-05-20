@@ -81,3 +81,17 @@
     }
     
 }
+
+@media screen and (max-width: 706px) {
+    .category-image {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 847px) {
+    .category-image {
+        width: 400px;
+        height: 250px;
+    }
+}
