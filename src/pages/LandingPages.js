@@ -140,7 +140,7 @@ function Header () {
                         {listPopularQuery.data?.popular.map((list) => (
                         <div class="col p-2">   
                             <div class="popular-image">
-                                    <div class="item-image">
+                                    <div class="popular-item-image">
                                     <img src={list.image}></img>
                                     </div>
                                     <div class="desc-item row mt-3">

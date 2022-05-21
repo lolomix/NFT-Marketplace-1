@@ -36,7 +36,7 @@ export default function Payment () {
             <Navbar/>
            <div class="container text-light">
            <div class="Payment-content">
-            {listItemQuery.data?.explore_nft.filter(list => list.id === id).map((list) => (
+            {listItemQuery.data?.explore_nft.fiter((list) => list.id === id).map((list) => (
             <div  class="row">
                 <div class="col d-flex justify-content-center">
                     <img class="Payment-image " src="https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/aldi-sigun-K-sdQ12jZeY-unsplash.jpg?alt=media&token=043aa742-15e2-46a9-8da9-4e8fdc6d11e4"></img>
@@ -61,11 +61,10 @@ export default function Payment () {
                     <hr/>
                     <div class="row mb-4">
                         <div class="d-flex justify-content-start col"><a>Total</a></div>
-                        <div class="content-end d-flex justify-content-end col"><a>500</a></div>
+                        <div class="content-end d-flex justify-content-end col"><a>$ {list.price*198556+500}</a></div>
                     </div>
                     <a class="btn btn-payment" onClick={onPayment}>Payment</a>
                 </div>
- 
             </div>
            ))}
             </div>

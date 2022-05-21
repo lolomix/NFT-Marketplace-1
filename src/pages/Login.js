@@ -60,7 +60,7 @@ export default function Login () {
                 icon: 'error',
                 title: 'Email tidak valid',
               })})
-        } if (password == "") {
+        } if (password != "") {
             Swal.fire({
                 icon: 'error',
                 title: 'Password Wajib di isi',

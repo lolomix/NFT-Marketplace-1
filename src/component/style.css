@@ -59,7 +59,6 @@
 /* Footer */
 footer .Logo {
     margin-top: 10px;
-    margin-right: 120px;
 }
 
 footer a {
@@ -114,5 +113,14 @@ footer li:hover {
 @media screen and (max-width: 1024px) {
     .Footer-List ul {
         padding: 17px;
+    }
+}
+
+@media screen and (max-width: 1059px) {
+    .Footer-List ul {
+        padding: 17px;
+    }
+    footer .Logo {
+        margin-right: 120px;
     }
 }
