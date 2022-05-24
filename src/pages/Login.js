@@ -30,7 +30,6 @@ export default function Login () {
 
     useEffect (() => {
         if (data?.login.length === 1) {
-            console.log("data", data);
             if (loading) {
                 <Loading/>
             }
@@ -100,7 +99,7 @@ export default function Login () {
 
                             <h5 class="fw-normal mb-3 pb-3">Login</h5>
 
-                            {data && <a class="alert bg-danger"><span>Error! </span>Anda Belum terdaftar!</a>}
+                            {data &&  <a class="alert bg-danger"><span>Error! </span>Anda Belum terdaftar!</a>}
        
                             <div class="form-outline mb-4 mt-4">
                                 <label class="form-label" for="form2Example17">Email</label>

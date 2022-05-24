@@ -7,7 +7,7 @@ export default function DigitalArts ({
     price,
     id
 }) {
-
+    
     return (
        
     <div class="col p-2 text-light">   

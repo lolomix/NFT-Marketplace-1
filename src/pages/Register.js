@@ -1,10 +1,18 @@
 import Navbar from "../component/Navbar"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Footer from "../component/Footer"
 import { Logo } from "../component/Logo"
 import { Link } from "react-router-dom"
 import Swal from "sweetalert2"
+import { gql, useMutation } from "@apollo/client"
 
+const insertRegister = gql`
+mutation MyMutation($object: login_insert_input!) {
+  insert_login_one(object: $object) {
+    id
+  }
+}
+`
 
 
 export function Register() {
@@ -21,7 +29,17 @@ export function Register() {
     const [email, setEmail] = useState("")
     const [erorMasage, setErorMassage] = useState (baseError);
     const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.com+)*$/
+    const [insert, {data, loading}] = useMutation(insertRegister)
+      
+  
+    useEffect (() => {
+      if (data?.insert_login_one) {
+        alert("Success")
+      }
+    })
     
+  
+
     const onChangeFirstName = (e) => {
         let value = e.target.value
         setfirstName(value)
@@ -47,7 +65,16 @@ export function Register() {
         setConfirmPassword(value) 
       }
 
-    const onLogin = () => {
+    const onRegister = () => {
+      insert ({ variables : {
+        object : {
+          firstName : firstName,
+          lastName : lastName,
+          email : email,
+          password : password,
+          id : 1
+        }
+      }})
         if( password != ConfirmPassword ) {
           Swal.fire({
             icon: 'error',
@@ -135,13 +162,13 @@ export function Register() {
                                 <input type="password" id="form2Example27" class="form-control form-control-lg form" value={password} onChange={onChangePassword}/>
                             </div>
 
-                            <div class="form-outline mb-4">
+                            <div class="form-outline mb-5">
                             <label class="form-label" for="form2Example27">Confirm Password</label>
                                 <input type="password" id="form2Example27" class="form-control form-control-lg form" value={ConfirmPassword} onChange={onChangeConfirmPassword }/>
                             </div>
 
-                            <div class="mb-4 btn-login">
-                                <a type="button" class="btn btn-lg text-light" onClick={onLogin}>Register</a>
+                            <div class="mt-4 btn-login">
+                                <a type="button" class="btn btn-lg text-light" onClick={onRegister}>Register</a>
                             </div>
 
                             <div class="mt-5">
