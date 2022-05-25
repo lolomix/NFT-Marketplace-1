@@ -130,3 +130,12 @@ footer li:hover {
         margin-right: 120px;
     }
 }
+
+@media screen and (max-width: 1099px) {
+    .Footer-List ul {
+        padding: 17px;
+    }
+    footer .Logo {
+        margin-right: 120px;
+    }
+}

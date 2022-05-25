@@ -3,7 +3,7 @@ export default  function LoadingSvg () {
         <svg
         style={{
             margin: 'auto',
-            background: 'rgb(255, 255, 255)',
+            background: 'none',
             display: 'block', 
             shaperendering: 'auto' ,
         }}

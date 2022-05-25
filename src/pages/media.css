@@ -1,3 +1,34 @@
+@media screen and (max-width: 1099px) {
+    .title h1 {
+        font-size: 40px;
+    }
+    
+    .img_1 img {
+        width: 135px;
+        height: 180px;
+        border-radius: 8px;
+    }
+
+    .img_2 img {
+        width: 180px;
+        height: 230px;
+    }
+    .img_2 {
+        margin-top: 140px;
+    }
+
+    .img_3 img {
+        width: 135px;
+        height: 180px;
+        border-radius: 8px;
+    }
+    .header2 img {
+            width: 110px;
+            height: 110px;
+    }
+
+}
+
 @media screen and (max-width: 990px) {
     .title h1 {
         font-size: 50px;
@@ -129,9 +160,6 @@
     .img_1 {
         padding-top: 160px;
     }
-    .img_2 {
-        padding-top: 10px;
-    }
     .img_3 {
         padding-top: 160px;
     }
@@ -181,6 +209,10 @@
     .item-image img {
         width: 175px;
         height: 230px;
+    }
+    
+    .content-help {
+        width: 288px;
     }
 
 } 

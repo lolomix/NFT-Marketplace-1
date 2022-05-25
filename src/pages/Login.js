@@ -40,7 +40,10 @@ export default function Login () {
             return Navigate("/")
         }
     })
-    
+
+    if (error){
+        <h1>Eror</h1>
+    }
     const onChangeEmail = (e) => {
         let value = e.target.value
         setEmail(value) 
@@ -54,12 +57,14 @@ export default function Login () {
     const onLogin = () => {
         getData ({ variables : { _eq : email, _eq1: password } });
 
+        
+
         if (!regexEmail.test(email)) {
             setErorMassage ({...erorMasage,[email] : Swal.fire({
                 icon: 'error',
                 title: 'Email tidak valid',
               })})
-        } if (password != "") {
+        } if (password == "") {
             Swal.fire({
                 icon: 'error',
                 title: 'Password Wajib di isi',
@@ -99,7 +104,7 @@ export default function Login () {
 
                             <h5 class="fw-normal mb-3 pb-3">Login</h5>
 
-                            {data &&  <a class="alert bg-danger"><span>Error! </span>Anda Belum terdaftar!</a>}
+                            { data &&  <a class="alert bg-danger"><span>Error! </span>Anda Belum terdaftar!</a>}
        
                             <div class="form-outline mb-4 mt-4">
                                 <label class="form-label" for="form2Example17">Email</label>

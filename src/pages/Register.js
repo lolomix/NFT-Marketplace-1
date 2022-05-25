@@ -1,10 +1,13 @@
 import Navbar from "../component/Navbar"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Footer from "../component/Footer"
 import { Logo } from "../component/Logo"
 import { Link } from "react-router-dom"
 import Swal from "sweetalert2"
 import { gql, useMutation } from "@apollo/client"
+import Loading from "../component/Loading"
+
+
 
 const insertRegister = gql`
 mutation MyMutation($object: login_insert_input!) {
@@ -14,13 +17,11 @@ mutation MyMutation($object: login_insert_input!) {
 }
 `
 
-
 export function Register() {
 
     const baseError = {
         email: "",
       }
-    
 
     const [firstName, setfirstName] = useState("")
     const [lastName, setLastName] = useState("")
@@ -29,17 +30,9 @@ export function Register() {
     const [email, setEmail] = useState("")
     const [erorMasage, setErorMassage] = useState (baseError);
     const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+(?:\.com+)*$/
-    const [insert, {data, loading}] = useMutation(insertRegister)
+    const [insert, {loading}] = useMutation(insertRegister)
       
   
-    useEffect (() => {
-      if (data?.insert_login_one) {
-        alert("Success")
-      }
-    })
-    
-  
-
     const onChangeFirstName = (e) => {
         let value = e.target.value
         setfirstName(value)
@@ -65,16 +58,17 @@ export function Register() {
         setConfirmPassword(value) 
       }
 
-    const onRegister = () => {
+    const onRegister = e => {
+      e.preventDefault();
       insert ({ variables : {
         object : {
           firstName : firstName,
           lastName : lastName,
           email : email,
           password : password,
-          id : 1
         }
       }})
+
         if( password != ConfirmPassword ) {
           Swal.fire({
             icon: 'error',
@@ -115,8 +109,14 @@ export function Register() {
               icon: 'error',
               title: 'Form Masih Kosong',
             })
-      }
+          }
     } 
+
+    
+    if (loading) {
+      <Loading/>
+    }
+
     return (
         <div>
              <section class="Login">
@@ -168,7 +168,7 @@ export function Register() {
                             </div>
 
                             <div class="mt-4 btn-login">
-                                <a type="button" class="btn btn-lg text-light" onClick={onRegister}>Register</a>
+                                <a type="button" class="btn btn-lg text-light" onSubmit={onRegister}>Register</a>
                             </div>
 
                             <div class="mt-5">

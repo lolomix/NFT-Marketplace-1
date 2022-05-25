@@ -43,7 +43,7 @@ export default function Payment () {
                 </div>
                 <div class="col">
                     <h1>{list.description}</h1>
-                    <p>{list.name}</p>
+                    <a>{list.name}</a>
                     <hr/>
                     <a class="Summary">Payment</a>
                     <div class="row mt-4">
@@ -52,7 +52,7 @@ export default function Payment () {
                     </div>
                     <div class ="row mt-2">
                         <div class="d-flex justify-content-start col"><a>Price</a></div>
-                        <div class="content-end d-flex justify-content-end col"><a>${list.price*198556}</a></div>
+                        <div class="content-end d-flex justify-content-end col"><a>$ {list.price*198556}</a></div>
                     </div>
                     <div class="row mt-2">
                         <div class="d-flex justify-content-start col"><a>Network Fee</a></div>
@@ -61,9 +61,9 @@ export default function Payment () {
                     <hr/>
                     <div class="row mb-4">
                         <div class="d-flex justify-content-start col"><a>Total</a></div>
-                        <div class="content-end d-flex justify-content-end col"><a>$ {list.price*198556+500}</a></div>
+                        <div class="content-end d-flex justify-content-end col"><a>$ {list.price*198556+80}</a></div>
                     </div>
-                    <a class="btn btn-payment" onClick={onPayment}>Payment</a>
+                    <a class="btn btn-payment" onClick={onPayment}>Buy</a>
                 </div>
             </div>
            ))}
