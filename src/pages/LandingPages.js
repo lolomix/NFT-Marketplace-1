@@ -1,11 +1,12 @@
 import React from "react";
 import './pages.css';
-import './media.css'
-import Footer from "../component/Footer"
-import Navbar from "../component/Navbar"
-import { Link } from "react-router-dom"
-import icon from "../img/ethereum.png"
-import { gql, useQuery } from "@apollo/client"
+import './media.css';
+import Footer from "../component/Footer";
+import Navbar from "../component/Navbar";
+import { Link } from "react-router-dom";
+import icon from "../img/ethereum.png";
+import { gql, useQuery } from "@apollo/client";
+import ListContentHeader from "./component/ListContentHeader";
 
 const listPopular = gql`
 query MyQuery {
@@ -19,7 +20,7 @@ query MyQuery {
   }
 `
 
-function Header () {
+export default function Header () {
     const listPopularQuery = useQuery(listPopular)
 
     return (
@@ -57,19 +58,7 @@ function Header () {
           </header>
 
           <div class="header2">
-              <div class="container d-flex justify-content-center">
-                    <div class="mb-4">
-                        <a><img src="https://i.postimg.cc/Jz7Ls0VW/IMG-20220428-041128.jpg"></img></a>
-                        <a><img src="https://i.postimg.cc/5NxG3rPB/IMG-20220428-041114.jpg"></img></a>
-                        <a><img src="https://i.postimg.cc/9F8xBQw2/IMG-20220428-041150.jpg"></img></a>
-                        <a><img src="https://i.postimg.cc/TPmCGj72/IMG-20220428-041137.jpg"></img></a>
-                        <a><img src="https://i.postimg.cc/Yq9RjBns/IMG-20220428-041058.jpg"></img></a>
-                        <a><img src="https://i.postimg.cc/bJ0PGtJp/IMG-20220428-041016.jpg"></img></a>
-                        <a><img src="https://i.postimg.cc/nV72D1pv/IMG-20220428-041028.jpg"></img></a>
-                        <a><img src="https://i.postimg.cc/cL8wpxCf/IMG-20220428-041041.jpg"></img></a>
-                    </div>
-              </div>
-              
+            <ListContentHeader/>
           </div>
 
           <div class="content2 text-light">
@@ -188,6 +177,3 @@ function Header () {
         
         )
    }
-
-
-export default Header

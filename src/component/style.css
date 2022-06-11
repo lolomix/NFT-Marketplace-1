@@ -29,9 +29,12 @@
     font-family: 'Poppins', sans-serif;
 }
 /* Logo END */
-.nav {
-    margin-top: 30px;
+
+/* Navbar */
+.navbar {
+    padding-top: 10px;
 }
+
 .navbar-wrapper .content-end a {
     margin-left: 20px;
 }
@@ -41,6 +44,20 @@
 }
 .navbar a {
     color: rgb(255, 255, 255);
+}
+
+.navbar.active {
+    background-color: #C93D8D ;
+    position : fixed;
+    width: 100%;
+    transition : 1s;
+}
+
+.navbar.active .btn-solid-login{
+    background-color: #1F0443
+}
+.navbar.active .logo span {
+    color : #1F0443 ;
 }
 
 .nav a:hover {
@@ -54,13 +71,14 @@
     border-radius: 10px;
     text-align: center;
     background-color: #C93D8D;
-    text-decoration: none;
     font-family: 'Poppins', sans-serif; 
 }
 
 .btn-solid-login:hover {
     background-color: #f3eaff;
 }
+
+/* End Navbar */
 
 /* Footer */
 footer .Logo {
