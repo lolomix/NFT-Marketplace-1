@@ -1,10 +1,9 @@
 import React from "react";
-import './pages.css';
-import './media.css';
-import Footer from "../component/Footer";
-import Navbar from "../component/Navbar";
+import '../pages.css';
+import Footer from "../../component/Footer/Footer";
+import Navbar from "../../component/Navbar/Navbar";
 import { Link } from "react-router-dom";
-import icon from "../img/ethereum.png";
+import icon from "../../img/ethereum.png";
 import { gql, useQuery } from "@apollo/client";
 import ListContentHeader from "./component/ListContentHeader";
 

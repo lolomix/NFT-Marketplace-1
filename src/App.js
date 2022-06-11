@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Explore from './pages/Explorer/Explore';
 import Help from './pages/Help';
-import LandingPage from './pages/LandingPages';
-import  Login  from "./pages/Login";
+import LandingPage from './pages/Landing Pages/LandingPages';
+import Login from './pages/Login/Login';
 import { Register } from './pages/Register';
 import Payment from "./pages/Payment"
 

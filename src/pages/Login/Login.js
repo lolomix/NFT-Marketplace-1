@@ -1,11 +1,11 @@
-import Navbar from "../component/Navbar"
+import Navbar from "../../component/Navbar/Navbar"
 import { useEffect, useState } from "react"
-import Footer from "../component/Footer"
-import { Logo } from "../component/Logo"
+import Footer from "../../component/Footer/Footer"
+import { Logo } from "../../component/Logo"
 import { Link, useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
 import { gql, useLazyQuery } from "@apollo/client"
-import Loading from "../component/Loading"
+import Loading from "../../component/Loading"
 
 const GetUser = gql`
 query MyQuery($_eq: String, $_eq1: String) {
@@ -83,7 +83,7 @@ export default function Login () {
 
     return (
         <div>
-             <section class="Login">
+             <div class="Login">
              <Navbar/>
              <div class="login-content container">
                 <div class="row d-flex justify-content-center align-items-center">
@@ -143,7 +143,7 @@ export default function Login () {
                 </div>
             </div>
             <Footer/>
-            </section>
+            </div>
             
         </div>
     )

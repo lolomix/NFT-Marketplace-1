@@ -1,0 +1,28 @@
+input {
+    background-color: transparent;
+    outline: 0;
+    width: 440px;
+    border: none;
+}
+
+.Search {
+
+    border: solid 1px;
+    border-color: white;
+    outline: invert;
+    border-radius: 20px;
+    width: 500px;
+    background-color: transparent;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+::placeholder {
+    margin-block-end: 100px;
+    color: white;
+    opacity: 70%;
+}

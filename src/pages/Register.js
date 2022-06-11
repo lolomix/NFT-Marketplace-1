@@ -1,6 +1,6 @@
-import Navbar from "../component/Navbar"
+import Navbar from "../component/Navbar/Navbar"
 import { useState } from "react"
-import Footer from "../component/Footer"
+import Footer from "../component/Footer/Footer"
 import { Logo } from "../component/Logo"
 import { Link } from "react-router-dom"
 import Swal from "sweetalert2"

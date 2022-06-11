@@ -1,0 +1,18 @@
+footer {
+    height: auto;
+    width: 100%;
+}
+
+footer .Logo {
+    margin-top: 10px;
+}
+
+.Footer-List ul {
+    list-style: none;
+    padding: 49px ;
+    float: left;
+}
+
+.Footer-List li {
+    padding-top: 15px;
+}

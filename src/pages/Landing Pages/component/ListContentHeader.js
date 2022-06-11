@@ -1,5 +1,5 @@
 import {MdNavigateNext, MdNavigateBefore} from "react-icons/md"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 export default function ListContentHeader () {
     const [isFirst, setFirst] = useState(true);

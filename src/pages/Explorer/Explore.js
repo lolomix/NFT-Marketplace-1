@@ -1,5 +1,5 @@
-import Footer from '../../component/Footer'
-import Navbar from '../../component/Navbar'
+import Footer from '../../component/Footer/Footer'
+import Navbar from '../../component/Navbar/Navbar'
 import { gql, useQuery } from '@apollo/client'
 import DigitalArts from './Digital-art'
 import Loading from "../../component/Loading"
@@ -22,7 +22,6 @@ export default function Explore () {
     if(loading) {
         return <Loading/>
     }
-
     if(error) {
         <h1>Null</h1>
     }
