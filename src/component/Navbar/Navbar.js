@@ -1,14 +1,21 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "react-router-dom";
+import { Link, useLocation, NavLink} from "react-router-dom";
 import ButtonLogin from "../ButtonLogin";
 import { Logo } from "../Logo";
 import SearchBar from "./SearchBar/SearchBar";
 import "./Navbar.css";
 
-function Navbar () {
-
+const Navbar = () => {
+    
+    const navLinkStyles = ({ isActive }) => {
+        return {
+            fontWeight: isActive ? '600' : 'normal',
+            color: isActive ? '#C93D8D' : 'white',
+            backgroundColor: isActive ? 'white' : 'none',
+            borderRadius: isActive ? '10px' : 'none'
+        }
+    }
     const [bgScrol, setBgScrol] = useState(false)
-    const style = {textDecoration: 'none'}
     
     useEffect(() => {
         changeBgNavbar()
@@ -30,9 +37,9 @@ function Navbar () {
                 <div class="collapse navbar-collapse justify-content-end nav" id="navbarNavAltMarkup">
                      <SearchBar/>
                       <div class="navbar-nav">
-                      <div class="nav-item nav-link"><Link to="/Explore"  style={style}>Explore</Link></div>
-                      <div class="nav-item nav-link"><Link to="/" style={style}>Stats</Link></div>
-                      <div class="nav-item nav-link"><Link to="/Help" style={style}>Help</Link></div>
+                      <NavLink className={`nav-item nav-link`} to="/Explore" style={navLinkStyles}>Explore</NavLink>
+                      <NavLink  className={`nav-item nav-link`} to="/Stats" style={navLinkStyles}>Stats</NavLink>
+                      <NavLink  className={`nav-item nav-link`} to="/Help" style={navLinkStyles}>Help</NavLink>
                       <ButtonLogin/>
                       </div>
                      </div>
@@ -41,5 +48,4 @@ function Navbar () {
             </div>
         )
     }
-
-export default Navbar;
+export default Navbar
