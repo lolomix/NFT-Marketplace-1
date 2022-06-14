@@ -3,6 +3,7 @@ import Navbar from '../../component/Navbar/Navbar'
 import { gql, useQuery } from '@apollo/client'
 import DigitalArts from './Digital-art'
 import Loading from "../../component/Loading"
+import Menubar from './component/Menubar'
 
 const GetDataExplorer = gql`
 query MyQuery {
@@ -34,10 +35,7 @@ export default function Explore () {
                 
                 <div class="row text-light pb-4 pt-4">
                     <div class="col">
-                        <a class="ex-title fs-3">Explorer</a>
-                        <a class="ex-menu menu-active">Digital Art</a>
-                        <a class="ex-menu">Photography</a>
-                        <a class="ex-menu">Music</a>
+                        <Menubar/>
                     </div>
                 </div>
 

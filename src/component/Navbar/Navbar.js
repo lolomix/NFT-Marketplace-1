@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Link, useLocation, NavLink} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import ButtonLogin from "../ButtonLogin";
 import { Logo } from "../Logo";
 import SearchBar from "./SearchBar/SearchBar";
@@ -12,9 +12,10 @@ const Navbar = () => {
             fontWeight: isActive ? '600' : 'normal',
             color: isActive ? '#C93D8D' : 'white',
             backgroundColor: isActive ? 'white' : 'none',
-            borderRadius: isActive ? '10px' : 'none'
+            borderRadius: isActive ? '10px' : 'none',
         }
     }
+
     const [bgScrol, setBgScrol] = useState(false)
     
     useEffect(() => {

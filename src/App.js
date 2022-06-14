@@ -7,6 +7,7 @@ import Login from './pages/Login/Login';
 import { Register } from './pages/Register';
 import Payment from "./pages/Payment"
 import Stats from './pages/Stats/Stats';
+import Music from './pages/Explorer/Music';
 
 
 
@@ -18,7 +19,11 @@ function App() {
           <Route path="/Stats" element={<Stats/>}/>
           <Route path="/Login" element={<Login/>}/>
           <Route path="/Register" element={<Register/>}/>
-          <Route path="/Explore" element={<Explore/>}/>
+          
+          <Route path="/Explore" element={<Explore/>}>
+          <Route path="/Explore/Music" element={<Music/>}/>
+          <Route path="/Explore/Photography" element={<Explore/>}/>
+          </Route>
           <Route path="/Help" element={<Help/>}/>
           <Route path="/Payment/:id" element={<Payment/>}/>
       </Routes> 

@@ -83,12 +83,12 @@ export default function Login () {
 
     return (
         <div>
-             <div class="Login">
+             <div style={{background : '#1F0443', width : '100%', height : '100%'}}>
              <Navbar/>
-             <div class="login-content container">
+             <div class="container pt-4">
                 <div class="row d-flex justify-content-center align-items-center">
                 <div class="col">
-                    <div class="card">
+                    <div style={{backgroundColor : '#361561', borderRadius : ' 20px '}}>
                     <div class="row g-0">
                         <div class="col-md-6 col-lg-5 d-none d-md-block">
                         <img src="https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/NFT-art.jpg?alt=media&token=1d0f4ac4-c277-421a-9819-7a672b830c26" alt="login form" class="img-fluid" />

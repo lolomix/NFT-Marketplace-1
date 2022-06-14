@@ -6,7 +6,7 @@ export default function SearchBar () {
     <div>
         <div className="Search">
         <div className="input-group p-2 ">
-            <input className="text-light" type="search" placeholder="Search item, collection"/>
+            <input className="text-light" type="search" placeholder="Search item, collection, Artist"/>
             <button><FaSearch/></button>
         </div>
         </div>

@@ -1,0 +1,17 @@
+.menu-bar {
+    background-color: #C93D8D ;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.filter {
+    background-color: #C93D8D;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.filter-menu {
+    margin-left: 10px;
+    border-radius: 10px;
+}

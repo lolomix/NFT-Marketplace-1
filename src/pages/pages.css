@@ -313,16 +313,6 @@ h1 {
 
 
 /*Login*/ 
-
-.Login {
-    background-color: #1F0443;
-    height: auto;
-}
-
-.login-content {
-    margin-top: 40px;
-}
-
 .card {
     background-color: #361561;
     border-radius: 20px;
