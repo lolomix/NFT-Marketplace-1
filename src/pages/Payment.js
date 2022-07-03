@@ -35,7 +35,7 @@ export default function Payment () {
         <div class="Payment">
             <Navbar/>
            <div class="container text-light">
-           <div class="Payment-content">
+           <div class="py-5">
             {listItemQuery.data?.explore_nft.filter(list => list.id == id).map((list) => (
             <div  class="row">
                 <div class="col d-flex justify-content-center">

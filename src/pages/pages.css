@@ -534,15 +534,11 @@ a:hover {
 
 .Payment-image{
     width: 400px;
-    height: 400px;
+    height: 550px;
     border-radius: 20px;
     border: solid;
 }
 
-.Payment-content {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
 
 .btn-payment {
     background-color: #be237b;

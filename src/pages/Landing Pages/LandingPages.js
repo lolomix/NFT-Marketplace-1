@@ -124,7 +124,7 @@ export default function Header () {
           <div class="Popular">
                 <div class="container">
                  <h2 class="mb-4 row">Popular item</h2>
-                    <div class="popular-item row">
+                    <div class="popular-item d-flex justify-content-between">
                         {listPopularQuery.data?.popular.map((list) => (
                         <div class="col p-2">   
                             <div class="popular-image">

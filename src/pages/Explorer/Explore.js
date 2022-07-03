@@ -39,7 +39,7 @@ export default function Explore () {
                     </div>
                 </div>
 
-                <div class="Content-explorer pb-4 row">
+                <div class="Content-explorer d-flex justify-content-between flex-wrap">
 
                 {data?.explore_nft.map((item) => 
                 <DigitalArts
