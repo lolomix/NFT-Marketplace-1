@@ -123,7 +123,7 @@ export default function Header () {
 
           <div class="Popular">
                 <div class="container">
-                 <h2 class="mb-4 row">Popular item</h2>
+                 <h2 class="mb-4">Popular item</h2>
                     <div class="popular-item d-flex justify-content-between">
                         {listPopularQuery.data?.popular.map((list) => (
                         <div class="col p-2">   
@@ -163,7 +163,7 @@ export default function Header () {
                 <div class="Content-last">
                     <h1>Ready To Collect NFT</h1>
                     <p>You can collect NFT from sells out digital asset in here</p>
-                    <Link to="#" style={{textDecoration: 'none'}}><a class="btn-start" >Start Today</a></Link>
+                    <Link to="/Login" style={{textDecoration: 'none'}}><a class="btn-start" >Start Today</a></Link>
                 </div>
             </div>
         </div>

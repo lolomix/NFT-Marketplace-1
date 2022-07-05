@@ -1,6 +1,7 @@
 export default  function LoadingSvg () {
     return (
-        <svg
+        <div style={{background : "#1F0443", width : '100%', height : '800px'}} className="d-flex justify-content-center">
+            <svg
         style={{
             margin: 'auto',
             background: 'none',
@@ -30,5 +31,6 @@ export default  function LoadingSvg () {
           ></animate>
         </path>
         </svg>
+        </div>
     )
 }

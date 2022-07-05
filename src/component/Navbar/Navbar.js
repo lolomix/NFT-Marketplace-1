@@ -33,7 +33,7 @@ const Navbar = () => {
         return (
             <div>
                 <div id="navbar" className={bgScrol ? ' navbar active ' : 'navbar'}>
-                <nav class="navbar navbar-expand-sm container ">
+                <nav class="navbar navbar-expand-sm container">
                 <Logo/>
                 <div class="collapse navbar-collapse justify-content-end nav" id="navbarNavAltMarkup">
                      <SearchBar/>

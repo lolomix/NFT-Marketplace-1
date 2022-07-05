@@ -125,22 +125,6 @@ h1 {
 }
 
 /* header2*/
-.header2 {
-    margin-bottom: 20px;
-}
-
-.header2 img {
-    padding: 10px;
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-}
-
-
-.header2 img:hover {
-    border: solid;
-
-}
 
 /* header2 END*/
 
@@ -358,48 +342,4 @@ a:hover {
 /*Login end*/ 
 
 
-
-/* Help */
-.help-title {
-    text-decoration: none;
-}
-
-.Help {
-    background-color: #120227;
-    width: auto;
-    height: auto;
-}
-
-.content-help {
-    border-radius: 20px;
-    padding: 25px;
-    text-align: center;
-    background-color: #1F0443;
-    height: 300px;
-    width: 288px;
-}
-
-.content-help p {
-    font-size: 20px;
-    opacity: 50%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.btn-help {
-    text-decoration: none;
-    background-color: #C93D8D;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.btn-help:hover {
-    background-color: #be237b;
-}
-
-.background-navbar {
-    background-color:#1F0443;
-}
-/* End Help */
 
