@@ -1,8 +1,9 @@
-import Navbar from '../component/Navbar/Navbar'
-import Footer from '../component/Footer/Footer';
+import Navbar from '../../component/Navbar/Navbar'
+import Footer from '../../component/Footer/Footer';
 import Swal from "sweetalert2";
 import { gql ,useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
+import "./payment.css"
 
 const onPayment = () => {
     if (true) {

@@ -1,0 +1,36 @@
+/* Payment pages*/
+.Payment {
+    background-color: #120227;
+    height: 100%;
+    width: 100%;
+}
+
+.Payment-image{
+    border-radius: 20px;
+    border: solid;
+}
+
+
+.btn-payment {
+    background-color: #be237b;
+    padding: 10px;
+    color: white;
+}
+
+
+.btn-payment:hover {
+    background-color: #a11263;
+    color: white;
+}
+
+.Summary {
+    font-size: large;
+    opacity: 50%;
+    text-decoration: none;
+}
+
+.content-end {
+    font-weight: bold;
+    color: #be237b;
+}
+/* End Payment pages*/

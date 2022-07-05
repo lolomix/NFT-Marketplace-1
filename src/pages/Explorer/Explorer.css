@@ -1,0 +1,71 @@
+/* Explore */
+.ex-title {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+.ex-menu {
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+    background-color:#C93D8D;
+}
+
+
+.ex-menu:hover {
+    font-weight: 600;
+    color: #C93D8D;
+    background-color: white;
+}
+
+.menu-active {
+    font-weight: 600;
+    color: #C93D8D;
+    background-color: white;
+}
+
+.Explore {
+    background-color: #120227;
+    background-size: cover;
+    height: auto;
+    max-height: max-content;
+    width: auto;
+}
+
+.Explore h1 {
+    padding-top: 150px;
+    color: white;
+}
+
+.item-image {
+    overflow : hidden;
+    height : 280px;
+    border-radius: 10px;
+}
+
+.item-image img {
+    width: 225px;
+    height: 280px;
+    transition: transform .5s ease;
+    
+}
+
+.item-image img:hover {
+    transform: scale(1.1)
+    
+}
+.explorer-item {
+    padding: 20px;
+    height: 520px;
+    width: 267px;
+    background-color:#1F0443;
+    border-radius: 10px;
+}
+
+.desc-item {
+    padding-top: 40px;
+}
+
+/* Explore End*/

@@ -222,14 +222,6 @@ h1 {
     opacity: 70%;
 }
 
-.explorer-item {
-    padding: 20px;
-    height: 540px;
-    width: 267px;
-    background-color:#1F0443;
-    border-radius: 10px;
-}
-
 .popular-image {
     padding: 20px;
     height: 540px;
@@ -252,16 +244,8 @@ h1 {
     height: 280px;
     
 }
-.item-image img {
-    border-radius: 10px;
-    width: 225px;
-    height: 280px;
-    
-}
 
-.desc-item {
-    padding-top: 70px;
-}
+
 
 
 /* Popular END*/
@@ -373,48 +357,7 @@ a:hover {
 
 /*Login end*/ 
 
-/* Explore */
-.ex-title {
-    text-decoration: none;
-    margin-right: 20px;
-}
 
-
-.ex-menu {
-    border-radius: 10px;
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 10px;
-    background-color:#C93D8D;
-}
-
-
-.ex-menu:hover {
-    font-weight: 600;
-    color: #C93D8D;
-    background-color: white;
-}
-
-.menu-active {
-    font-weight: 600;
-    color: #C93D8D;
-    background-color: white;
-}
-
-.Explore {
-    background-color: #120227;
-    background-size: cover;
-    height: auto;
-    max-height: max-content;
-    width: auto;
-}
-
-.Explore h1 {
-    padding-top: 150px;
-    color: white;
-}
-
-/* Explore End*/
 
 /* Help */
 .help-title {
@@ -460,106 +403,3 @@ a:hover {
 }
 /* End Help */
 
-/* Dashboard */
-.Dashboard {
-    background-color: #120227;
-    width: auto;
-    min-height: auto ;
-}
-
-.title-dashboard {
-    text-decoration: none;
-    font-size: 20px;
-}
-/* end Dashboard */
-
-.create-collection {
-    margin-top: 25px;
-    background-color:#1F0443;
-    border-radius: 10px;
-    height: 400px;
-}
-
-
-.create-collection input {
-    margin-top:15px;
-    color: white;
-    width: 500px;
-    height: 35px;
-    background-color: #361561;
-    border-radius: 5px;
-    border-style: none;
-}
-
-.external-link {
-    margin-right: 80px;
-    margin-left: 30px;
-}
-
-.create-collection .name {
-    margin-right: 125px;
-    margin-left: 30px;
-}
-.create-collection .description {
-    margin-right:90px ;
-    margin-left: 30px;
-}
-.create-collection .price {
-    margin-right:135px ;
-    margin-left: 30px;
-}
-
-.form-price {
-    margin-bottom: 20px;
-}
-.btn-upload {
-    padding: 10px;
-    background-color: #be237b;
-    margin-left: 200px;
-    border-radius: 10px;
-    text-decoration: none;
-    
-}
-
-.btn-upload:hover {
-    background-color:#a11263;
-}
-
-/* Payment pages*/
-.Payment {
-    background-color: #120227;
-    height: 100%;
-    width: 100%;
-}
-
-.Payment-image{
-    width: 400px;
-    height: 550px;
-    border-radius: 20px;
-    border: solid;
-}
-
-
-.btn-payment {
-    background-color: #be237b;
-    padding: 10px;
-    color: white;
-}
-
-
-.btn-payment:hover {
-    background-color: #a11263;
-    color: white;
-}
-
-.Summary {
-    font-size: large;
-    opacity: 50%;
-    text-decoration: none;
-}
-
-.content-end {
-    font-weight: bold;
-    color: #be237b;
-}
-/* End Payment pages*/

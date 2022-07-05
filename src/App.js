@@ -5,7 +5,7 @@ import Help from "../src/pages/Help/Help";
 import LandingPage from './pages/Landing Pages/LandingPages';
 import Login from './pages/Login/Login';
 import { Register } from './pages/Register';
-import Payment from "./pages/Payment"
+import Payment from "./pages/Payment/Payment"
 import Stats from './pages/Stats/Stats';
 import Music from './pages/Explorer/Music';
 

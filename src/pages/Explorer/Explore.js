@@ -4,6 +4,7 @@ import { gql, useQuery } from '@apollo/client'
 import DigitalArts from './Digital-art'
 import Loading from "../../component/Loading"
 import Menubar from './component/Menubar'
+import "./Explorer.css"
 
 const GetDataExplorer = gql`
 query MyQuery {

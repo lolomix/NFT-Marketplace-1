@@ -19,5 +19,22 @@
 .dropdown {
     background-color: white;
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
+}
+
+.dropdown-price {
+    background-color: white;
+    margin-left: 12px;
+    border-radius : 10px;
+}
+
+.dropdown-price input {
+    border-radius : 10px;
+    width : 105px
+}
+
+.dropdown-price .btn {
+   border-radius : 10px;
+   background-color : #be237b;
+   padding : 2px;
 }
