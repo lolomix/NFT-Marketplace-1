@@ -7,16 +7,6 @@ import { useState } from "react"
 
 const Menubar = () => {
 
-    const navLinkStyles = ({ isActive }) => {
-        return {
-            fontWeight: isActive ? '600' : 'normal',
-            color: isActive ? '#C93D8D' : 'white',
-            backgroundColor: isActive ? 'white' : 'none',
-            borderRadius: isActive ? '10px' : 'none',
-
-        }
-    }
-
     const [selected, setSelected] = useState("")
     const [open, setOpen] = useState(false)
     const [openPrice, setOpenPrice] = useState(false)
@@ -38,11 +28,7 @@ const Menubar = () => {
     return (
         <div>
             <div className="d-flex justify-content-between">
-                <div className="col">
-                <NavLink className={`menu-bar p-3 `} style={navLinkStyles} to="/Explore">Digital Art</NavLink>
-                <NavLink className={`menu-bar p-3 `} style={navLinkStyles} to="/Photography">Photography</NavLink>
-                <NavLink className={`menu-bar p-3 `} style={navLinkStyles} to="/Music">Music</NavLink>
-                </div>
+                <div>Explore</div>
                 <div className="d-flex justify-content-end">
                 {filter && ( <> 
                     <div>

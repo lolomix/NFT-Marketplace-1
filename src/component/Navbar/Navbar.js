@@ -11,8 +11,6 @@ const Navbar = () => {
         return {
             fontWeight: isActive ? '600' : 'normal',
             color: isActive ? '#C93D8D' : 'white',
-            backgroundColor: isActive ? 'white' : 'none',
-            borderRadius: isActive ? '10px' : 'none',
         }
     }
 
@@ -32,8 +30,8 @@ const Navbar = () => {
     }
         return (
             <div>
-                <div id="navbar" className={bgScrol ? ' navbar active ' : 'navbar'}>
-                <nav class="navbar navbar-expand-sm container">
+                <div id="navbar" className={bgScrol ? ' navbar active  ' : 'navbar'}>
+                <nav class=" navbar navbar-expand-sm container">
                 <Logo/>
                 <div class="collapse navbar-collapse justify-content-end nav" id="navbarNavAltMarkup">
                      <SearchBar/>

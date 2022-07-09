@@ -27,31 +27,14 @@ export default function Header () {
             <div class="LandingPage">
             <Navbar/>
             <header row>
-             <div class="Header container col">
-             <div class="row  ">
-                  <div class="title col-lg-4">
+             <div class="Header container">
+             <div class="d-flex justify-content-between py-3">
+                  <div class="title">
                    <h1>Create and Sell Your Digital Masterpiece</h1>
-                   <p class="">The Biggest marketplace that sells digital asset from crypto</p>
+                   <p>With virtual technology you can see the digital world feel more real and you can play the game with a new style.</p>
                    <Link to="Explore" style={{textDecoration: 'none'}}><a class="btn-solid-lg" >Explore</a></Link>
                   </div>
-
-                  <div class="image img_1 col">
-                      <a><img src="https://i.postimg.cc/pVhWYp6Q/Vadim.jpg"></img></a>
-                      <p class="name">Vadim Bogulov</p>
-                      <p class="Description">Mona Liza from lego tiles</p>
-                  </div>
-
-                  <div class="image img_2 col">
-                      <a><img src="https://i.postimg.cc/CMJSCbFQ/Philip.jpg"></img></a>
-                      <p class="name">Penna Magalhães</p>
-                      <p class="Description">Human art</p>
-                  </div>
-
-                  <div class="image img_3 col">
-                      <a><img src="https://i.postimg.cc/fR4hvC9D/Nicola.jpg"></img></a>
-                      <p class="name">Nicola POWYS</p>
-                      <p class="Description">Arts & Culture</p>
-                  </div> 
+                  <div className="img-header"><img src="https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/unnamed.gif?alt=media&token=8fd2f4d5-cdaf-46e5-9f94-9ca12f9f0938" /></div>
               </div>
              </div>
           </header>

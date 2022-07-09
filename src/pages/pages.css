@@ -43,8 +43,8 @@ h1 {
 }
 
 .title {
-    padding-top: 140px;
-    margin-right: 100px;
+    margin-top : 180px;
+    margin-right : 50px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -75,53 +75,18 @@ h1 {
 }
 
 /*image Header*/
-.img_1 {
-    text-align: center;
-    padding-top: 200px;
-}
-
-.img_1 img {
-    width: 160px;
-    height: 210px;
-    border-radius: 10px;
-}
-
-.img_2 {
-    text-align: center;
-    margin-top: 100px;
-}
-
-.img_2 img {
-    width: 220px;
-    height: 270px;
-    border-radius: 10px;
-}
-
-.img_3 {
-    padding-top: 200px;
-    text-align: center;
-}
-
-.img_3 img {
-    width: 160px;
-    height: 210px;
-    border-radius: 10px;
-}
-
-.image a :hover {
-    border: solid;
-}
-
-.image p {
-    margin-top: 10px;
-}
-
 .name {
     font-weight: bold;
 }
 
 .Description {
     opacity: 50%;
+}
+
+.img-header img {
+    width : 520px;
+    height: 520px;
+    border-radius : 40% 10%;
 }
 
 /* header2*/

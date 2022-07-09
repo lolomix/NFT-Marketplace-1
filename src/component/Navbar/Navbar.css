@@ -28,6 +28,11 @@
 .nav-item {
     margin-left: 15px;
 }
+
+.nav-item:hover {
+    text-decoration : underline ;
+}
+
 .navbar a {
     color: rgb(255, 255, 255);
 }

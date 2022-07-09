@@ -5,11 +5,16 @@
     width: 100%;
 }
 
-.Payment-image{
-    border-radius: 20px;
-    border: solid;
+.Payment img {
+    width : 400px;
+    height : 500px;
+    transition: transform .5s ease;
+    border-radius: 0 0 15px 15px ;
 }
 
+.rounded-5 {
+    border-radius: 15px;
+}
 
 .btn-payment {
     background-color: #be237b;
