@@ -24,7 +24,7 @@ export default function ArtistProfile({name, list}) {
             <div className='p-2 '>Copy Link</div>
             <div className='p-2 '><BsFacebook size={20}/> <span className='ps-2'>Share on Facebook</span></div>
             <div className='p-2 '><BsTwitter size={20}/> <span className='ps-2'>Share on Twitter</span></div>
-            <div className='p-2  ' ><BsFacebook size={20}/> <span className='ps-2'>Emded Item</span></div>
+            <div className='p-2 '><BsFacebook size={20}/> <span className='ps-2'>Emded Item</span></div>
           </div>
           )}
         </div>
@@ -33,9 +33,9 @@ export default function ArtistProfile({name, list}) {
       </div>
       <div className='fs-2 pb-2'>{list}</div>
       <div className='d-flex align-items-center'>
-      <div className='pe-5'><BsFillPeopleFill size={20}/> 800</div>
-      <div className='pe-5'><BsFillEyeFill size={20}/> 800</div>
-      <div className='pe-5'><BsFillHeartFill size={20}/> 800</div>
+      <div className='pe-5'>Owned By <button style={{color : '#be237b'}}>Muchlisaryn</button></div>
+      <div className='pe-5'><BsFillEyeFill size={20} className="me-2"/>800 Views</div>
+      <div className='pe-5'><BsFillHeartFill size={20} className="me-2"/>17 Favorite</div>
       </div>
     </div>
   )

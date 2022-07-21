@@ -8,6 +8,8 @@ import NavLike from './Component/NavLike';
 import ArtistName from './Component/ArtistProfile';
 import ArtistProfile from './Component/ArtistProfile';
 import ItemImage from './Component/ItemImage';
+import Graphic from './Component/Graphic';
+import Listings from './Component/Listings';
 
 const onPayment = () => {
     if (true) {
@@ -52,6 +54,9 @@ export default function Payment () {
                      name={list.name}
                      list={list.description}/>
                     </div>
+                    <Graphic/>
+                    <Listings
+                    price={list.price}/>
                     <a className="Summary">Payment</a>
                     <div className="row mt-4">
                         <div className="d-flex justify-content-start col"><a>{list.name}</a></div>

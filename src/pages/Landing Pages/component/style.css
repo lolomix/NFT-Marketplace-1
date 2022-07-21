@@ -5,8 +5,8 @@
 .header2 img {
     transition: transform .5s ease;
     padding: 10px;
-    width: 130px;
-    height: 130px;
+    width: 115px;
+    height: 115px;
     border-radius: 20px;
 }
 
@@ -15,9 +15,3 @@
     transform: scale(1.3)
 }
 
-.list-content button {
-    width : 40px;
-    height : 40px;
-    background-color : #C93D8D;
-    border-radius : 35px;
-}
