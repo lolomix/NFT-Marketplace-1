@@ -11,13 +11,13 @@ export default function Listings({price}) {
     }
 
   return (
-    <div className="border rounded p-3 mt-3">
+    <div className="border rounded mt-3 p-3">
         <div className="d-flex justify-content-between">
         <div><IoPricetag size={20} className="me-3"/>Listings</div>
         {!openListing ? <button onClick={handleListing}><FiChevronDown size={20}/></button> : <button onClick={handleListing}><FiChevronUp size={20}/></button>}
       </div>
       {openListing && (
-        <table className="table text-light table-borderless">
+        <table className="table text-light table-borderless mt-3 ">
         <thead>
           <tr>
             <th scope="col">Price</th>
@@ -31,8 +31,8 @@ export default function Listings({price}) {
             <td scope="row"><FaEthereum className='me-2'/>{price}</td>
             <td>{price*14000}</td>
             <td>3 Months</td>
-            <td><button style={{color : '#be237b'}}>Muchlisaryn</button></td>
-            <td><button style={{backgroundColor : '#be237b'}} className="px-4 rounded">Buy</button></td>
+            <td style={{color : '#be237b'}} >Muchlisaryn</td>
+            <td><button style={{backgroundColor : '#be237b'}} className="px-4 p-1 rounded">Buy</button></td>
           </tr>
         </tbody>
       </table>

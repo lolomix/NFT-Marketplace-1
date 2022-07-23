@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {MdVerified, MdShare} from "react-icons/md"
-import { BsFillPeopleFill, BsFillEyeFill, BsFillHeartFill, BsFacebook, BsTwitter } from "react-icons/bs"
+import {TbCurrencyEthereum} from "react-icons/tb"
+import { BsCode, BsFillEyeFill, BsFillHeartFill, BsFacebook, BsTwitter } from "react-icons/bs"
 
 export default function ArtistProfile({name, list}) {
 
@@ -20,11 +21,11 @@ export default function ArtistProfile({name, list}) {
         <div>
           <button onClick={handleShare}><MdShare size={20} /></button>
           {!share && (
-            <div className='position-absolute top-20 end-0 translate-middle-x m-2' style={{background : '#be237b', borderRadius : 5}}>
-            <div className='p-2 '>Copy Link</div>
+            <div className='position-absolute translate-middle-x m-2' style={{background : '#be237b', borderRadius : 5}}>
+            <div className='p-2 '><TbCurrencyEthereum size={20}/><span className='ps-2'>Copy Link</span></div>
             <div className='p-2 '><BsFacebook size={20}/> <span className='ps-2'>Share on Facebook</span></div>
             <div className='p-2 '><BsTwitter size={20}/> <span className='ps-2'>Share on Twitter</span></div>
-            <div className='p-2 '><BsFacebook size={20}/> <span className='ps-2'>Emded Item</span></div>
+            <div className='p-2 '><BsCode size={20}/> <span className='ps-2'>Emded Item</span></div>
           </div>
           )}
         </div>
