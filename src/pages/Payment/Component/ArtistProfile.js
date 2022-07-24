@@ -21,7 +21,7 @@ export default function ArtistProfile({name, list}) {
         <div>
           <button onClick={handleShare}><MdShare size={20} /></button>
           {!share && (
-            <div className='position-absolute translate-middle-x m-2' style={{background : '#be237b', borderRadius : 5}}>
+            <div className='position-absolute translate-middle-x m-2 rounded' style={{background : '#be237b', width : '190px'}}>
             <div className='p-2 '><TbCurrencyEthereum size={20}/><span className='ps-2'>Copy Link</span></div>
             <div className='p-2 '><BsFacebook size={20}/> <span className='ps-2'>Share on Facebook</span></div>
             <div className='p-2 '><BsTwitter size={20}/> <span className='ps-2'>Share on Twitter</span></div>

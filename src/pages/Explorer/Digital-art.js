@@ -10,7 +10,7 @@ export default function DigitalArts ({
     
     return (
        
-    <div className="pb-2 text-light">   
+    <div className="pb-3 text-light">   
         <div className="explorer-item ">
                 <div className="item-image pb-4">
                 <img src={gambar}></img>
