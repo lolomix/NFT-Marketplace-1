@@ -29,7 +29,7 @@ export default function Listings({price}) {
         <tbody>
           <tr>
             <td scope="row"><FaEthereum className='me-2'/>{price}</td>
-            <td>{price*14000}</td>
+            <td>${price*1.716}</td>
             <td>3 Months</td>
             <td style={{color : '#be237b'}} >Muchlisaryn</td>
             <td><button style={{backgroundColor : '#be237b'}} className="px-4 p-1 rounded">Buy</button></td>

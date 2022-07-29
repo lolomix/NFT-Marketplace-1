@@ -23,7 +23,7 @@ export default function CurrentPrice({price}) {
         <div className='d-flex align-items-center '>
             <FaEthereum size={25}/>
             <div className='px-3 fs-2 fw-bold'>{price}</div>
-            <div className='text-white-50'>(${price*14000})</div>
+            <div className='text-white-50'>(${price*1.716})</div>
         </div>
         <div className='d-flex'>
             <button style={{backgroundColor : '#be237b'}} className="d-flex align-items-center p-3 rounded" onClick={onPayment}>

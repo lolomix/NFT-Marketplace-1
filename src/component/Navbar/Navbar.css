@@ -30,9 +30,14 @@
 }
 
 .nav-item:hover {
-    text-decoration : underline ;
+    color: white;
+    opacity: 70% ;
 }
 
 .navbar a {
     color: rgb(255, 255, 255);
+}
+
+.Login:hover {
+    opacity: 70%;
 }

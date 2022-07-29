@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import {FaEthereum} from "react-icons/fa"
 
 export default function DigitalArts ({
     name,
@@ -15,26 +16,18 @@ export default function DigitalArts ({
                 <div className="item-image pb-4">
                 <img src={gambar}></img>
                 </div>
-                <div className="desc-item row">
-                    <div className="col-7">
-                        <p className="Artist-Name">{name}</p>
-                    </div>
-                        <div className="col d-flex justify-content-end">
-                                <p>Price</p>   
-                        </div>
-                    </div>
-                    <div className="row mb-4">
-                        <div className="col-7">
-                            <a>{description}</a>
-                        </div>
-                        <div className="col d-flex justify-content-end">
-                            <a><img src="https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/ethereum.png?alt=media&token=593235eb-5855-426c-8541-03c97a84216f"></img></a>
-                            <p>{price}</p>
-                        </div>
+                <div className="desc-item d-flex justify-content-between mb-3">
+                    <div className="Artist-Name">{name}</div>
+                    <div>Price</div>
                 </div>
-                    <div className=''>
-                    <Link to={`/Payment/${id}/`}  style={{textDecoration: 'none'}}><a className="btn-buy d-flex justify-content-center">Buy Now</a></Link>
-                    </div>
+                    <div className="d-flex justify-content-between mb-5">
+                        <div className='text-truncate' style={{maxWidth : '150px'}}>{description}</div>
+                        <div className="d-flex align-items-center">
+                            <FaEthereum/>
+                            <div>{price}</div>
+                        </div>
+                     </div>
+                    <Link to={`/Payment/${id}/`}  style={{textDecoration: 'none'}}><div className="btn-buy d-flex justify-content-center">Buy Now</div></Link>
             </div>
     </div>
     )

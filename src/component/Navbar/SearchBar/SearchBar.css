@@ -6,7 +6,7 @@ input {
 }
 
 .Search {
-
+    opacity: 80%;
     border: solid 1px;
     border-color: white;
     outline: invert;
@@ -22,7 +22,8 @@ button {
 }
 
 ::placeholder {
+    text-align: end;
     margin-block-end: 100px;
     color: white;
-    opacity: 70%;
+    opacity: 30%;
 }
