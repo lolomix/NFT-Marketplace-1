@@ -11,9 +11,9 @@ export default function DigitalArts ({
     
     return (
        
-    <div className="pb-3 text-light">   
+    <div className="p-2 text-light">   
         <div className="explorer-item ">
-                <div className="item-image pb-4">
+                <div className="item-image">
                 <img src={gambar}></img>
                 </div>
                 <div className="desc-item d-flex justify-content-between mb-3">

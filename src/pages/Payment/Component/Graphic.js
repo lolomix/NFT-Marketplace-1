@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from "chart.js";
 import { Line } from "react-chartjs-2";
-import {FiChevronDown, FiChevronUp} from "react-icons/fi"
-import {MdShowChart} from "react-icons/md"
+import { FiChevronDown, FiChevronUp } from "react-icons/fi"
+import { MdShowChart } from "react-icons/md"
 const { faker } = require("@faker-js/faker");
 
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
@@ -57,8 +57,8 @@ export default function Graphic() {
   return (
     <div id="graphic" className="border rounded p-3 mt-3">
       <div className="d-flex justify-content-between">
-        <div><MdShowChart size={20} className="me-3"/>Price History</div>
-        {!openGraphic ? <button onClick={handleGraphic}><FiChevronDown size={20}/></button> : <button onClick={handleGraphic}><FiChevronUp size={20}/></button>}
+        <div><MdShowChart size={20} className="me-3" />Price History</div>
+        {!openGraphic ? <button onClick={handleGraphic}><FiChevronDown size={20} /></button> : <button onClick={handleGraphic}><FiChevronUp size={20} /></button>}
       </div>
       {openGraphic && (
         <Line options={options} data={data} />

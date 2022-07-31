@@ -24,10 +24,6 @@ export default function LandingPage () {
             <Category/>
             <PopularItem />
             <ContentLast/>
-          
-
-        
-
          </div> 
          <div className="background-footer" >
             <Footer/>

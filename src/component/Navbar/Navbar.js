@@ -11,7 +11,7 @@ const Navbar = () => {
     const navLinkStyles = ({ isActive }) => {
         return {
             fontWeight: isActive ? '600' : 'normal',
-            color: isActive ? '#C93D8D' : '',
+            color: isActive ? '#C93D8D' : 'white',
             backgroundColor: isActive ? 'white' : '',
             borderRadius: isActive ? '10px' : ''
         }
