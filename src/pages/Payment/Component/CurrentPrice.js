@@ -4,15 +4,13 @@ import {BiTimeFive} from "react-icons/bi"
 import { IoPricetag } from "react-icons/io5"
 import Swal from "sweetalert2";
 
-export default function CurrentPrice({price}) {
+export default function CurrentPrice({price, usd}) {
 
     const onPayment = () => {
-        if (true) {
             Swal.fire({
                 icon: 'success',
                 title: 'Pembelian Berhasil',
               })
-        }
     }
 
   return (
@@ -23,7 +21,7 @@ export default function CurrentPrice({price}) {
         <div className='d-flex align-items-center '>
             <FaEthereum size={25}/>
             <div className='px-3 fs-2 fw-bold'>{price}</div>
-            <div className='text-white-50'>(${price*1.716})</div>
+            <div className='text-white-50'>(${price*usd})</div>
         </div>
         <div className='d-flex'>
             <button style={{backgroundColor : '#be237b'}} className="d-flex align-items-center p-3 rounded" onClick={onPayment}>

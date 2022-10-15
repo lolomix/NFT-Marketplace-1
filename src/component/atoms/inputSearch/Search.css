@@ -1,17 +1,16 @@
 input {
     background-color: transparent;
     outline: 0;
-    width: 440px;
+    width: 300px;
     border: none;
 }
 
 .Search {
-    opacity: 80%;
+    opacity: 70%;
     border: solid 1px;
     border-color: white;
     outline: invert;
     border-radius: 20px;
-    width: 500px;
     background-color: transparent;
 }
 
@@ -22,8 +21,7 @@ button {
 }
 
 ::placeholder {
-    text-align: end;
-    margin-block-end: 100px;
+    text-align: start;
     color: white;
     opacity: 30%;
 }

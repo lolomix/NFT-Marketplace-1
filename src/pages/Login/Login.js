@@ -1,11 +1,11 @@
-import Navbar from "../../component/Navbar/Navbar"
 import { useEffect, useState } from "react"
-import Footer from "../../component/Footer/Footer"
 import { Logo } from "../../component/Logo"
 import { Link, useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
 import { gql, useLazyQuery } from "@apollo/client"
 import Loading from "../../component/Loading"
+import Navbar from "../../component/molecules/Navbar"
+import Footer from "../../component/molecules/Footer/Index"
 
 const GetUser = gql`
 query MyQuery($_eq: String, $_eq1: String) {
@@ -16,7 +16,6 @@ query MyQuery($_eq: String, $_eq1: String) {
     }
   }
 `
-
 
 export default function Login () {
 

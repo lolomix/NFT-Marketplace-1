@@ -12,7 +12,7 @@ export default function ListContentHeader () {
 
     return (
             <div class="container d-flex justify-content-center flex-warp ">
-                    <div class="mb-4 list-content">
+                    <div class="list-content">
                         {isFirst && ( <div>
                         <button className="mx-4" onClick={onClick}><IoIosArrowDropleft size={30}/></button>
                         <Link to="/Explore"><img src="https://i.postimg.cc/Jz7Ls0VW/IMG-20220428-041128.jpg" alt="img"></img></Link>

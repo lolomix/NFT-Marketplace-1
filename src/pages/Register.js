@@ -1,11 +1,11 @@
-import Navbar from "../component/Navbar/Navbar"
 import { useState } from "react"
-import Footer from "../component/Footer/Footer"
 import { Logo } from "../component/Logo"
 import { Link } from "react-router-dom"
 import Swal from "sweetalert2"
 import { gql, useMutation } from "@apollo/client"
 import Loading from "../component/Loading"
+import Navbar from "../component/molecules/Navbar"
+import Footer from "../component/molecules/Footer/Index"
 
 
 

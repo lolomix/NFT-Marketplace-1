@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Title from '../../../component/molecules/Title/Index';
 
 export default function Category() {
   return (
     <>
      <section className="Category">
             <div className="container">
-                <h2 className="row">Category</h2>
+                <Title title="Category"/>
                     <div className="Category-item row">
                         <div className="col pt-4">
                             <Link to="#" style={{textDecoration: 'none'}}>

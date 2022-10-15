@@ -122,57 +122,7 @@ h1 {
 
 }
 
-/* Category 3 End*/
 
-/* Popular */
-.btn-buy {
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #C93D8D;
-    text-decoration: none;
-}
-
-.btn-buy:hover {
-    font-weight: bold;
-    color: #C93D8D;
-    background-color: #ffffff;
-}
-
-.Popular {
-    padding-top: 100px;
-}
-
-.Artist-Name {
-    opacity: 70%;
-}
-
-.popular-image {
-    padding: 20px;
-    height: 540px;
-    width: 267px;
-    background-color:#1F0443;
-    border-radius: 10px;
-}
-
-.popular-item-image {
-    height: 220px;
-}
-
-.item-image {
-    height: 250px;
-}
-
-.popular-item-image img {
-    border-radius: 10px;
-    width: 225px;
-    height: 280px;
-    
-}
-
-
-
-
-/* Popular END*/
 
 /* Content Last */
 

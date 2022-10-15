@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react"
 import { NavLink} from "react-router-dom";
-import ButtonLogin from "../ButtonLogin";
 import { BiUserCircle} from "react-icons/bi"
-import { Logo } from "../Logo";
-import SearchBar from "./SearchBar/SearchBar";
+import { TbAlignRight } from "react-icons/tb"
+import { Logo } from "../../Logo";
 import "./Navbar.css";
+import Search from "../../atoms/inputSearch";
+import Button from "../../atoms/Buttons";
 
 const Navbar = () => {
     
@@ -32,22 +33,26 @@ const Navbar = () => {
         }
     }
         return (
-            <div>
-                <div id="navbar" className={bgScrol ? ' navbar active  ' : 'navbar'}>
-                <nav class=" navbar navbar-expand-sm container">
+            <>
+            <div id="navbar" className={bgScrol ? ' navbar active  ' : 'navbar'}>
+                <nav className="p-2 navbar-expand-sm container container-fluid">
                 <Logo/>
-                <div class="collapse navbar-collapse justify-content-end nav " id="navbarNavAltMarkup">
-                     <SearchBar/>
-                      <div class="navbar-nav d-flex align-items-center">
+                <Button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <TbAlignRight size={25}/>
+                </Button>
+                <div className="collapse navbar-collapse justify-content-end nav  " id="navbarSupportedContent">
+                      <Search/>
+                      <div className="navbar-nav d-flex align-items-center">
                       <NavLink className={`nav-item nav-link`} to="/Explore" style={navLinkStyles}>Explore</NavLink>
                       <NavLink  className={`nav-item nav-link`} to="/Stats" style={navLinkStyles}>Stats</NavLink>
                       <NavLink  className={`nav-item nav-link`} to="/Help" style={navLinkStyles}>Help</NavLink>
                       <NavLink  className="ps-3 Login" to="/Login"><BiUserCircle size={40}/></NavLink>
                       </div>
-                     </div>
+                </div>
                 </nav>
                 </div>
-            </div>
+                
+            </>
         )
     }
 export default Navbar

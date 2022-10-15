@@ -1,11 +1,11 @@
-import Footer from '../../component/Footer/Footer'
-import Navbar from '../../component/Navbar/Navbar'
+import Navbar from '../../component/molecules/Navbar'
 import { gql, useQuery } from '@apollo/client'
-import DigitalArts from './Digital-art'
 import Loading from "../../component/Loading"
-import Menubar from './component/Menubar'
 import "./Explorer.css"
 import Filter from './component/filter'
+import Card from '../../component/molecules/Card'
+import Footer from '../../component/molecules/Footer/Index'
+import CardSkeleton from '../../component/molecules/CardSkeleton'
 
 const GetDataExplorer = gql`
 query MyQuery {
@@ -18,8 +18,6 @@ query MyQuery {
     }
   }
   `
-
-
 
 export default function Explore () {
     const {data, loading, error} = useQuery(GetDataExplorer)
@@ -36,26 +34,21 @@ export default function Explore () {
         <div class="Explore">
         <Navbar/>
             <div class="container">
-                {/* // <div class="row text-light pb-4 pt-4">
-                //     <div class="col">
-                //         <Menubar/>
-                //     </div>
-                // </div> */}
 
                 <div className="d-flex justify-content-between">
                     <div>
                     <Filter/>
                     </div>
+                    <CardSkeleton/>
 
-
-                    <div class="Content-explorer d-flex flex-wrap">
+                    <div class=" d-flex flex-wrap">
                     {data?.explore_nft.map((item) => 
-                    <DigitalArts
-                        name={item.name}
-                        gambar={item.gambar}
-                        description={item.description}
-                        price={item.price}
-                        id={item.id}
+                    <Card 
+                    name={item.name}
+                    image={item.gambar}
+                    description={item.description}
+                    price={item.price}
+                    id={item.id}
                     />
                     )}
                     </div>

@@ -1,14 +1,13 @@
 import React from "react";
 import '../pages.css';
-import Footer from "../../component/Footer/Footer";
-import Navbar from "../../component/Navbar/Navbar";
-import { Link } from "react-router-dom";
 
 import Total from "./component/Total";
 import Category from "./component/Category";
 import Header from "./component/Header";
 import PopularItem from "./component/PopularItem";
 import ContentLast from "./component/ContentLast";
+import Navbar from "../../component/molecules/Navbar";
+import Footer from "../../component/molecules/Footer/Index";
 
 
 
@@ -24,7 +23,7 @@ export default function LandingPage () {
             <Category/>
             <PopularItem />
             <ContentLast/>
-         </div> 
+            </div> 
          <div className="background-footer" >
             <Footer/>
             </div>

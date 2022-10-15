@@ -1,5 +1,5 @@
-import Footer from "../../component/Footer/Footer"
-import Navbar from "../../component/Navbar/Navbar"
+import Footer from "../../component/molecules/Footer/Index"
+import Navbar from "../../component/molecules/Navbar"
 import "./Help.css"
 
 export default function Help () {

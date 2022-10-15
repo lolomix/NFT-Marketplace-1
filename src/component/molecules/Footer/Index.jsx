@@ -1,4 +1,4 @@
-import { Logo } from "../Logo";
+import { Logo } from "../../Logo";
 import {FaFacebook, FaTwitter, FaYoutube} from "react-icons/fa"
 import { Link } from "react-router-dom";
 import "./footer.css"

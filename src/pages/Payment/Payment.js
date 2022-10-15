@@ -1,5 +1,4 @@
-import Navbar from '../../component/Navbar/Navbar'
-import Footer from '../../component/Footer/Footer';
+import Navbar from '../../component/molecules/Navbar'
 import { gql ,useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import "./payment.css"
@@ -9,6 +8,12 @@ import Graphic from './Component/Graphic';
 import Listings from './Component/Listings';
 import CurrentPrice from './Component/CurrentPrice';
 import Offers from './Component/Offers';
+import { useEffect } from 'react';
+import axios from "axios"
+import { useState } from 'react';
+import Footer from '../../component/molecules/Footer/Index';
+
+
 
 const listItem = gql`
 query MyQuery {
@@ -21,12 +26,28 @@ query MyQuery {
     }
   }
 `
-
-
 export default function Payment () {
+
     const listItemQuery = useQuery(listItem);
     const {id} = useParams();
-    console.log(id)
+    const [usd, setUsd] = useState([])
+
+    const APi_URL = `https://api.currencyfreaks.com/latest?apikey=${process.env.REACT_APP_KEY}&symbols=IDR`
+
+    console.log(APi_URL)
+
+    useEffect (() => {
+        axios.get(APi_URL)
+        .then((get) => {
+            console.log(get.data)
+            console.log("==> ", get.data.rates)
+            setUsd(Object.values(get.data.rates))
+        }) .catch ((error)=> {
+            console.log(error)
+        })
+    })
+
+    
 
     return (
         <div className="Payment">
@@ -44,7 +65,7 @@ export default function Payment () {
                      name={list.name}
                      list={list.description}/>
                     </div>
-                    <CurrentPrice price={list.price}/>
+                    <CurrentPrice price={list.price} usd={usd}/>
                     <Graphic/>
                     <Listings
                     price={list.price}/>
