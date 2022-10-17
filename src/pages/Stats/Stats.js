@@ -1,6 +1,7 @@
 import Footer from "../../component/molecules/Footer/Index"
 import Navbar from "../../component/molecules/Navbar"
-import Table from "../../component/Table"
+import Table from "../../component/molecules/Table"
+
 
 export default function Stats () {
     return (

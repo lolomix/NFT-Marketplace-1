@@ -1,11 +1,12 @@
 import { useState } from "react"
-import { Logo } from "../component/Logo"
 import { Link } from "react-router-dom"
 import Swal from "sweetalert2"
 import { gql, useMutation } from "@apollo/client"
-import Loading from "../component/Loading"
 import Navbar from "../component/molecules/Navbar"
 import Footer from "../component/molecules/Footer/Index"
+import LoadingSvg from "../component/atoms/Loading"
+import { Logo } from "../component/atoms/Logo"
+import Button from "../component/atoms/Buttons"
 
 
 
@@ -58,7 +59,7 @@ export function Register() {
         setConfirmPassword(value) 
       }
 
-    const onRegister = e => {
+    const onRegister = (e) => {
       e.preventDefault();
       insert ({ variables : {
         object : {
@@ -67,112 +68,70 @@ export function Register() {
           email : email,
           password : password,
         }
-      }})
-
-        if( password != ConfirmPassword ) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Password tidak sama',
-          })
-        } if (ConfirmPassword == "") {
-          Swal.fire({
-              icon: 'error',
-              title: 'Confirm Password Masih Kosong',
-            })
-      }if (password == "") {
-          Swal.fire({
-              icon: 'error',
-              title: 'Password Masih Kosong',
-            })
-      }if (!regexEmail.test(email)) {
-        setErorMassage ({...erorMasage,[email] : Swal.fire({
-            icon: 'error',
-            title: 'Email Tidak Valid',
-          })})
-      } if( email == "") {
-          Swal.fire({
-            icon: 'error',
-            title: 'Email masih kosong',
-          })
-        } if (lastName == "") {
-          Swal.fire({
-            icon: 'error',
-            title: 'Last Name Masih Kosong',
-          })
-        } if (firstName == "") {
-          Swal.fire({
-            icon: 'error',
-            title: 'First Name Masih Kosong',
-          })
-        } if ( email != "" == password != "" == firstName != "" == lastName != "" ) {
-          Swal.fire({
-              icon: 'error',
-              title: 'Form Masih Kosong',
-            })
-          }
+      }}) 
     } 
 
     
     if (loading) {
-      <Loading/>
+      <LoadingSvg/>
     }
 
     return (
         <div>
              <section style={{background : '#1F0443', width : '100%', height : '100%'}}>
              <Navbar/>
-             <div class="container pt-4">
-                <div class="row d-flex justify-content-center align-items-center">
-                <div class="col ">
+             <div className="container pt-4">
+                <div className="row d-flex justify-content-center align-items-center">
+                <div className="col ">
                     <div style={{backgroundColor : '#361561', borderRadius : ' 20px '}}>
-                    <div class="row g-0">
-                        <div class="col-md-6 col-lg-5 d-none d-md-block">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/NFT-art.jpg?alt=media&token=1d0f4ac4-c277-421a-9819-7a672b830c26" class="img-fluid" alt="Responsive image" />
+                    <div className="row g-0">
+                        <div className="col-md-6 col-lg-5 d-none d-md-block">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/NFT-art.jpg?alt=media&token=1d0f4ac4-c277-421a-9819-7a672b830c26" className="img-fluid" alt="image" />
                         </div>
-                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
-                        <div class="card-body p-4 p-lg-5 text-light">
+                        <div className="col-md-6 col-lg-7 d-flex align-items-center">
+                        <div className="card-body p-4 p-lg-5 text-light">
 
                             <form>
 
-                            <div class="d-flex align-items-center mb-3 pb-1">
-                                <span class="fw-bold mb-0"><Logo/></span>
+                            <div className="d-flex align-items-center mb-3 pb-1">
+                                <span className="fw-bold mb-0"><Logo/></span>
                             </div>
 
-                            <h5 class="fw-normal mb-3 pb-3">Login</h5>
+                            <h5 className="fw-normal mb-3 pb-3">Login</h5>
 
-                            <div class="row">
-                            <div class="form-outline mb-4 col">
-                                <label class="form-label" for="form2Example17">First Name</label>
-                                <input type="text" id="form2Example17" class="form-control form-control-lg form" value={firstName} onChange={onChangeFirstName}/>
+                            <div className="row">
+                            <div className="form-outline mb-4 col">
+                                <label className="form-label" for="form2Example17">First Name</label>
+                                <input type="text" id="form2Example17" className="form-control form-control-lg form" value={firstName} onChange={onChangeFirstName}/>
                             </div>
-                              <div class="col">
-                              <label class="form-label" for="form2Example17">Last Name</label>
-                                <input type="text" id="form2Example17" class="form-control form-control-lg form" value={lastName} onChange={onChangeLastName} />
+                              <div className="col">
+                              <label className="form-label" for="form2Example17">Last Name</label>
+                                <input type="text" id="form2Example17" className="form-control form-control-lg form" value={lastName} onChange={onChangeLastName} />
                               </div>
                             </div>
 
-                            <div class="form-outline mb-4">
-                            <label class="form-label" for="form2Example27">Email</label>
-                                <input type="email" id="form2Example27" class="form-control form-control-lg form" value={email} onChange={onChangeEmail}/>
+                            <div className="form-outline mb-4">
+                            <label className="form-label" for="form2Example27">Email</label>
+                                <input type="email" id="form2Example27" className="form-control form-control-lg form" value={email} onChange={onChangeEmail} required/>
                             </div>
 
 
-                            <div class="form-outline mb-4">
-                            <label class="form-label" for="form2Example27">Password</label>
-                                <input type="password" id="form2Example27" class="form-control form-control-lg form" value={password} onChange={onChangePassword}/>
+                            <div className="form-outline mb-4">
+                            <label className="form-label" for="form2Example27">Password</label>
+                                <input type="password" id="form2Example27" className="form-control form-control-lg form" value={password} onChange={onChangePassword}/>
                             </div>
 
-                            <div class="form-outline mb-5">
-                            <label class="form-label" for="form2Example27">Confirm Password</label>
-                                <input type="password" id="form2Example27" class="form-control form-control-lg form" value={ConfirmPassword} onChange={onChangeConfirmPassword }/>
+                            <div className="form-outline mb-5">
+                            <label className="form-label" for="form2Example27">Confirm Password</label>
+                                <input type="password" id="form2Example27" className="form-control form-control-lg form" value={ConfirmPassword} onChange={onChangeConfirmPassword }/>
                             </div>
 
-                            <div class="mt-4 btn-login">
-                                <a type="button" class="btn btn-lg text-light" onSubmit={onRegister}>Register</a>
+                            <div className="mt-4 btn-login">
+                                <Button className="btn btn-lg text-light" onClick={onRegister} children="Register"/>
                             </div>
 
-                            <div class="mt-5">
-                            <p>Already Registered? <Link to="/Login" style={{textDecoration: 'none'}}><a class="Register">Login Now</a></Link></p>
+                            <div className="mt-5">
+                            <p>Already Registered? <Link to="/Login" style={{textDecoration: 'none'}}><a className="">Login Now</a></Link></p>
                             </div>
                             </form>
 

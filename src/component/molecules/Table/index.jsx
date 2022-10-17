@@ -1,5 +1,4 @@
 import React from 'react'
-import "./style.css"
 import {FaEthereum} from "react-icons/fa"
 import {IoMdArrowDropup, IoMdArrowDropdown} from "react-icons/io"
 import {TbEqual} from "react-icons/tb"

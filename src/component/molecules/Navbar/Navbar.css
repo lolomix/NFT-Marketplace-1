@@ -5,6 +5,10 @@
     transition : 1s;
 }
 
+.navbar-wrapper a:hover {
+    color: #C93D8D;
+}
+
 .navbar.active .logo span {
     color : #1F0443 ;
 }

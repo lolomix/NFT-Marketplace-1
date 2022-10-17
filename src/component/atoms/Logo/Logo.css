@@ -1,0 +1,13 @@
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #C93D8D;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}

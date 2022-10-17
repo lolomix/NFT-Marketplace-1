@@ -42,10 +42,10 @@ export default function Payment () {
             console.log(get.data)
             console.log("==> ", get.data.rates)
             setUsd(Object.values(get.data.rates))
-        }) .catch ((error)=> {
+        }).catch ((error)=> {
             console.log(error)
         })
-    })
+    },[usd])
 
     
 
@@ -54,7 +54,7 @@ export default function Payment () {
             <Navbar/>
            <div className="container text-light">
            <div className="py-5">
-            {listItemQuery.data?.explore_nft.filter(list => list.id == id).map((list) => (
+            {listItemQuery.data?.explore_nft.filter(list => list.id === id).map((list) => (
             <div className="row">
                 <div className="col d-flex justify-content-center ">
                 <ItemImage gambar={list.gambar}/>

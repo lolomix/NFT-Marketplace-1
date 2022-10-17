@@ -1,11 +1,11 @@
 import Navbar from '../../component/molecules/Navbar'
 import { gql, useQuery } from '@apollo/client'
-import Loading from "../../component/Loading"
 import "./Explorer.css"
 import Filter from './component/filter'
 import Card from '../../component/molecules/Card'
 import Footer from '../../component/molecules/Footer/Index'
 import CardSkeleton from '../../component/molecules/CardSkeleton'
+import LoadingSvg from '../../component/atoms/Loading'
 
 const GetDataExplorer = gql`
 query MyQuery {
@@ -23,7 +23,7 @@ export default function Explore () {
     const {data, loading, error} = useQuery(GetDataExplorer)
 
     if(loading) {
-        return <Loading/>
+        return <LoadingSvg/>
     }
     if(error) {
         <h1>Null</h1>
@@ -31,9 +31,9 @@ export default function Explore () {
 
     return (
         <div>
-        <div class="Explore">
+        <div className="Explore">
         <Navbar/>
-            <div class="container">
+            <div className="container">
 
                 <div className="d-flex justify-content-between">
                     <div>

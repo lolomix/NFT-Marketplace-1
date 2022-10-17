@@ -16,8 +16,8 @@ export default function ItemImage({gambar}) {
   return (
     <div>
       <div className="col d-flex justify-content-center ">
-                    <div className='border border-dark rounded-5'>
-                    <div className='d-flex justify-content-between'>
+                <div className='border border-dark rounded-5'>
+                  <div className='d-flex justify-content-between'>
                     <button className='p-3'><span style={{color : '#be237b'}}>Ethereum</span><FaEthereum size={20} className='ms-3'/></button>
                     <div className='p-3 d-flex flex-row align-items-center'>
                         <div className='pe-2'>{Like? dataLike : dataLike+1}</div>
@@ -25,7 +25,7 @@ export default function ItemImage({gambar}) {
                     </div>
                   </div>
                     <img  src={gambar} alt="img-NFT"></img>
-                    </div>
+              </div>
         </div>
     </div>
   )

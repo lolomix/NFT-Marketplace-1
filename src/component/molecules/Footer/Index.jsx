@@ -1,6 +1,6 @@
-import { Logo } from "../../Logo";
 import {FaFacebook, FaTwitter, FaYoutube} from "react-icons/fa"
 import { Link } from "react-router-dom";
+import { Logo } from "../../atoms/Logo";
 import "./footer.css"
 
 export default function Footer (){
@@ -15,7 +15,7 @@ export default function Footer (){
                 <div className="container Footer-List">
                     <div className="pt-5 d-flex justify-content-between">
                         <div className="">
-                            <Logo/>                     
+                            <Logo/>                    
                         </div>
                         <div className="d-flex">
                             <ul className="pe-4">
@@ -60,7 +60,7 @@ export default function Footer (){
                 </div>
                 <hr style={styleItem}/>
                 <div className="pb-3 d-flex justify-content-center">
-                <a style={styleItem}>© Copyright 2022 MiniProject Muchlisaryn</a>
+                <div style={styleItem}>© Copyright 2022 MiniProject Muchlisaryn</div>
                 </div>
                 
             </footer>

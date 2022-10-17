@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react"
 import { NavLink} from "react-router-dom";
 import { BiUserCircle} from "react-icons/bi"
 import { TbAlignRight } from "react-icons/tb"
-import { Logo } from "../../Logo";
 import "./Navbar.css";
 import Search from "../../atoms/inputSearch";
 import Button from "../../atoms/Buttons";
+import { Logo } from "../../atoms/Logo";
 
 const Navbar = () => {
     

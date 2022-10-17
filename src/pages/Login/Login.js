@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import { Logo } from "../../component/Logo"
 import { Link, useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
 import { gql, useLazyQuery } from "@apollo/client"
-import Loading from "../../component/Loading"
 import Navbar from "../../component/molecules/Navbar"
 import Footer from "../../component/molecules/Footer/Index"
+import LoadingSvg from "../../component/atoms/Loading"
+import { Logo } from "../../component/atoms/Logo"
 
 const GetUser = gql`
 query MyQuery($_eq: String, $_eq1: String) {
@@ -30,7 +30,7 @@ export default function Login () {
     useEffect (() => {
         if (data?.login.length === 1) {
             if (loading) {
-                <Loading/>
+                <LoadingSvg/>
             }
             Swal.fire({
                 icon: 'success',
@@ -44,31 +44,26 @@ export default function Login () {
         <h1>Eror</h1>
     }
     const onChangeEmail = (e) => {
-        let value = e.target.value
-        setEmail(value) 
+        setEmail(e.target.value)
       }
     
     const onChangePassword = (e) => {
-        let value = e.target.value
-        setPassword(value) 
+        setPassword(e.target.value)
       }
 
     const onLogin = () => {
         getData ({ variables : { _eq : email, _eq1: password } });
-
-        
-
         if (!regexEmail.test(email)) {
             setErorMassage ({...erorMasage,[email] : Swal.fire({
                 icon: 'error',
                 title: 'Email tidak valid',
               })})
-        } if (password == "") {
+        } if (password === "") {
             Swal.fire({
                 icon: 'error',
                 title: 'Password Wajib di isi',
               })
-        } if ( email != "" == password != "" ) {
+        } if ( email !== "" || password !== "" ) {
             Swal.fire({
                 icon: 'error',
                 title: 'Form Masih Kosong',
@@ -77,7 +72,7 @@ export default function Login () {
     } 
 
     if (loading) {
-        <Loading/>
+        <LoadingSvg/>
     }
 
     return (
@@ -112,7 +107,7 @@ export default function Login () {
 
                             <div className="form-outline mb-4">
                             <label className="form-label" for="form2Example27">Password</label>
-                                <input type="password" id="form2Example27" className="form-control form-control-lg form" value={password} onChange={onChangePassword}/>
+                                <input type="password" id="form2Example27" className="form-control form-control-lg form" value={password} onChange={onChangePassword} required/>
                             </div>
 
                             <div className="row pb-4">
