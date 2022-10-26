@@ -19,10 +19,6 @@
   display: block;
 }
 
-.background-footer {
-  background-color: #1f0443;
-}
-
 div {
   display: block;
 }
@@ -82,10 +78,6 @@ h1 {
   height: 520px;
   border-radius: 80px;
 }
-
-/* Category 3*/
-
-/* Content Last */
 
 .Content-last-background {
   padding-top: 200px;

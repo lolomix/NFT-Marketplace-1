@@ -1,7 +1,7 @@
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import "../style.css";
+import "./style.css";
 import Button from "../../../../component/atoms/Buttons";
 import { data } from "./Data";
 

@@ -1,14 +1,15 @@
 import CardHelp from "../../component/molecules/CardHelp";
 import Footer from "../../component/molecules/Footer/Index";
 import Navbar from "../../component/molecules/Navbar";
+import PageContainer from "../../component/PageContainer";
 import "./style.css";
 
 export default function Help() {
   return (
     <div class="Help">
       <Navbar />
-      <div class="container text-light">
-        <div class="row">
+      <PageContainer>
+        <div class="row text-light">
           <CardHelp
             title="Create Account"
             description="Learn how to Create your account for starting buy and sell in
@@ -39,7 +40,7 @@ export default function Help() {
             description="Search your question in most frequently ask question"
           />
         </div>
-      </div>
+      </PageContainer>
       <Footer />
     </div>
   );

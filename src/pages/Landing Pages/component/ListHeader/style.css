@@ -1,0 +1,11 @@
+.header2 img {
+  transition: transform 0.5s ease;
+  padding: 10px;
+  width: 115px;
+  height: 115px;
+  border-radius: 20px;
+}
+
+.header2 img:hover {
+  transform: scale(1.3);
+}

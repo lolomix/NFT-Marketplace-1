@@ -6,6 +6,7 @@ import Card from "../../component/molecules/Card";
 import Footer from "../../component/molecules/Footer/Index";
 import CardSkeleton from "../../component/molecules/CardSkeleton";
 import LoadingSvg from "../../component/atoms/Loading";
+import PageContainer from "../../component/PageContainer";
 
 const GetDataExplorer = gql`
   query MyQuery {
@@ -33,7 +34,8 @@ export default function Explore() {
     <div>
       <div className="Explore">
         <Navbar />
-        <div className="container">
+
+        <PageContainer>
           <div className="row row-cols-sm-2 row-cols-md-4">
             {data?.explore_nft.map((item) => (
               <div class="col">
@@ -47,7 +49,8 @@ export default function Explore() {
               </div>
             ))}
           </div>
-        </div>
+        </PageContainer>
+
         <Footer />
       </div>
     </div>

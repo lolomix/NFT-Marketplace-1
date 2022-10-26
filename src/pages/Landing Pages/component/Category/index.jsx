@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import CardCategory from "../../../component/molecules/CardCategory";
-import Title from "../../../component/molecules/Title/Index";
+import Title from "../../../../component/molecules/Title/Index";
+import CardCategory from "../../../../component/molecules/CardCategory";
 
 export default function Category() {
   return (

@@ -35,8 +35,8 @@ const Navbar = () => {
     <>
       <div
         id="navbar"
-        className={`  ${
-          bgScrol ? " navbar active position-fixed   " : "navbar"
+        className={`position-fixed w-100 ${
+          bgScrol ? " navbar active   " : "navbar "
         }`}
       >
         <nav className="p-2 navbar-expand-sm container container-fluid ">
