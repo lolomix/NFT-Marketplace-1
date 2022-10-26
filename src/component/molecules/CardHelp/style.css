@@ -1,0 +1,38 @@
+/* Help */
+.content-help {
+  border-radius: 20px;
+  text-align: center;
+  background-color: #1f0443;
+}
+
+.content-help p {
+  font-size: 20px;
+  opacity: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn-help {
+  text-decoration: none;
+  background-color: #c93d8d;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-help:hover {
+  background-color: #be237b;
+}
+
+/* End Help */
+
+@media screen and (min-width: 1400px) {
+  .content-help {
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: #1f0443;
+    height: 350px;
+    width: 338px;
+  }
+}

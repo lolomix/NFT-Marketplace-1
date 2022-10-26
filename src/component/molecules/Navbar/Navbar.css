@@ -1,43 +1,42 @@
 .navbar.active {
-    background-color: #C93D8D ;
-    position : fixed;
-    width: 100%;
-    transition : 1s;
+  background-color: #c93d8d;
+  width: 100%;
+  transition: 1s;
 }
 
 .navbar-wrapper a:hover {
-    color: #C93D8D;
+  color: #c93d8d;
 }
 
 .navbar.active .logo span {
-    color : #1F0443 ;
+  color: #1f0443;
 }
 
 .btn-solid-login {
-    padding: 10px;
-    width: 80px;
-    border-radius: 10px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif; 
+  padding: 10px;
+  width: 80px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-wrapper .content-end a {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .nav-item {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .nav-item:hover {
-    color: white;
-    opacity: 70% ;
+  color: white;
+  opacity: 70%;
 }
 
 .navbar a {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .Login:hover {
-    opacity: 70%;
+  opacity: 70%;
 }

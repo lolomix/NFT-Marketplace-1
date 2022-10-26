@@ -1,235 +1,190 @@
 /*Alert Login*/
 .alert {
-    text-decoration: none;
-    width:max-content;
+  text-decoration: none;
+  width: max-content;
 }
 
 .alert span {
-    font-weight: bold;
+  font-weight: bold;
 }
 /*End Alert Login*/
 
-
-
 .LandingPage {
-    background:url('https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/Background-Header.png?alt=media&token=6729884f-d230-4765-b8c2-c073a76ceca7');
-    /* background-color:#120227; */
-    background-size: cover;
-    max-height: 100%;
-    min-width: 100%;
-    color: rgb(255, 255, 255);
-    display: block;
+  background: url("https://firebasestorage.googleapis.com/v0/b/upload-113c4.appspot.com/o/Background-Header.png?alt=media&token=6729884f-d230-4765-b8c2-c073a76ceca7");
+  /* background-color:#120227; */
+  background-size: cover;
+  max-height: 100%;
+  min-width: 100%;
+  color: rgb(255, 255, 255);
+  display: block;
 }
 
-
-
 .background-footer {
-    background-color:#1F0443 ;
+  background-color: #1f0443;
 }
 
 div {
-    display: block;
+  display: block;
 }
 
 h1 {
-    display: block;
+  display: block;
 }
 
 /*css Header */
 
-
 .Header {
-    padding-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .title {
-    margin-top : 180px;
-    margin-right : 50px;
-    font-family: 'Poppins', sans-serif;
+  margin-top: 180px;
+  margin-right: 50px;
+  font-family: "Poppins", sans-serif;
 }
 
 .title h1 {
-    font-size: 48px;
-    font-weight: 400px;
+  font-size: 48px;
+  font-weight: 400px;
 }
 
 .title p {
-    font-size: 20px;
-    opacity: 50%;
-    margin-bottom: 30px;
+  font-size: 20px;
+  opacity: 50%;
+  margin-bottom: 30px;
 }
 
 .btn-solid-lg {
-    color:  white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    background-color: #C93D8D;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #c93d8d;
 }
 
 .btn-solid-lg:hover {
-    color:#C93D8D;
-    font-weight: bold;
-    background-color: #f3eaff;
-    
+  color: #c93d8d;
+  font-weight: bold;
+  background-color: #f3eaff;
 }
 
 /*image Header*/
 .name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .Description {
-    opacity: 50%;
+  opacity: 50%;
 }
 
 .img-header img {
-    width : 520px;
-    height: 520px;
-    border-radius:80px;
+  width: 520px;
+  height: 520px;
+  border-radius: 80px;
 }
 
 /* Category 3*/
 
-.Category {
-    padding: 20px;
-}
-
-.category-image {
-    width: 350px;
-    height: 250px;
-    border-radius: 20px;
-}
-
-
-.item-image-1 {
-    background-image: url("https://i.postimg.cc/s2RXV1vw/matt-roskovec-f-B3-u-W-TUcs-unsplash.jpg");
-    
-}
-
-.item-image-2 {
-    background-image: url("https://i.postimg.cc/B61yg5TC/anshita-nair-f-F0munh-TD4w-unsplash.jpg");
-}
-
-.item-image-3 {
-    background-image: url("https://i.postimg.cc/6qMm6Htt/erik-mclean-Qzpgq-Elv-Si-A-unsplash.jpg");
-}
-
-.Category-item-title {
-    background-color: #C93D8D;
-    padding: 10px;
-    border-radius: 0px 20px;
-
-}
-
-
-
 /* Content Last */
 
 .Content-last-background {
-    padding-top: 200px;
-    padding-bottom: 150px;
-    background-image: url("https://i.postimg.cc/XvwxZL9M/Background-Content3.png");
-    max-width: 100%;
-    background-size: cover;
-    
+  padding-top: 200px;
+  padding-bottom: 150px;
+  background-image: url("https://i.postimg.cc/XvwxZL9M/Background-Content3.png");
+  max-width: 100%;
+  background-size: cover;
 }
 
 .Content-last {
-    max-height: 100px;
-    text-align: center;
+  max-height: 100px;
+  text-align: center;
 }
 
 .Content-last h1 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .Content-last p {
-    font-size: 20px;
-    opacity: 50%;
-    margin-bottom: 30px;
+  font-size: 20px;
+  opacity: 50%;
+  margin-bottom: 30px;
 }
 
 .btn-start {
-    background-color:#C93D8D;
-    border-radius: 10px;
-    text-decoration: none;
-    padding: 10px;
+  background-color: #c93d8d;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .btn-start:hover {
-    font-weight: bold;
-    color: #C93D8D;
-    background-color:#ffffff;
-    border-radius: 10px;
-    text-decoration: none;
-    padding: 10px;
+  font-weight: bold;
+  color: #c93d8d;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px;
 }
 
 /* Content Last End*/
 
-
-
-/*Login*/ 
+/*Login*/
 .card {
-    background-color: #361561;
-    border-radius: 20px;
+  background-color: #361561;
+  border-radius: 20px;
 }
 
 .img-fluid {
-    height: 100%;
-    width: 100%;
-    border-radius: 20px 0px 0px 20px;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .form-login {
-    padding-top: 180px;
+  padding-top: 180px;
 }
 
 .form-check-label {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-.btn {width: 100%;}
+.btn {
+  width: 100%;
+}
 
 .btn-login {
-    text-align: center;
-    border-radius: 10px;
-    background-color: #C93D8D;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #c93d8d;
 }
 
 .btn-login:hover {
-    font-weight: bold;
-    color: #C93D8D;
-    background-color: #ff69be;
+  font-weight: bold;
+  color: #c93d8d;
+  background-color: #ff69be;
 }
 
 .Forgot-pw {
-    color: #C93D8D;
-    font-weight: 600;
-    text-decoration: none;
+  color: #c93d8d;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .Register {
-    color:#C93D8D;
-    text-decoration: none;
+  color: #c93d8d;
+  text-decoration: none;
 }
 
 .Register:hover {
-    color:#f757b2;
+  color: #f757b2;
 }
 
-
 a {
-    color: white;
+  color: white;
 }
 
 a:hover {
-    color: white;
+  color: white;
 }
 
-
-/*Login end*/ 
-
-
-
+/*Login end*/
